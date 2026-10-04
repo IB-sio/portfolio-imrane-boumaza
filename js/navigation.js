@@ -24,7 +24,7 @@
     document.querySelectorAll('[data-contact]').forEach((link) => {
         const key = link.dataset.contact;
         const value = contacts[key] || (key === 'cv' ? root + 'assets/docs/cv-imrane-boumaza.pdf' : '');
-        if (key === 'linkedin' && !value.trim()) { link.remove(); return; }
+        if ((key === 'linkedin' || key === 'github') && !value.trim()) { link.remove(); return; }
         if (value) {
             link.href = value;
             link.target = '_blank';

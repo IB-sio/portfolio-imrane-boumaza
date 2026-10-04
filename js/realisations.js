@@ -488,6 +488,35 @@ const projets = [
         "group": "Réseaux & cybersécurité"
     },
     {
+        "id": "passe-ton-hack",
+        "title": "Passe ton hack d’abord · Challenge cyber national",
+        "categories": [
+            "Sécurité"
+        ],
+        "technologies": [
+            "CTF",
+            "Cryptographie",
+            "Hachage",
+            "Certificats"
+        ],
+        "summary": "Résoudre en équipe des épreuves de cybersécurité lors du challenge national pour lycéens et étudiants.",
+        "context": "Challenge CTF en ligne organisé par le Commandement de la cyberdéfense (COMCYBER) et le ministère de l’Éducation nationale, ouvert aux lycéens et aux étudiants de BTS.",
+        "objective": "Mettre en pratique des notions de cybersécurité sur des épreuves concrètes, en équipe.",
+        "steps": [
+            "Épreuves de cryptographie : chiffrement, hachage et certificats.",
+            "Sécurité des données et résolution de challenges pratiques en équipe."
+        ],
+        "contribution": "",
+        "difficulty": "",
+        "skills": [
+            6
+        ],
+        "pdf": "",
+        "pdfExpected": "",
+        "status": "Challenge national",
+        "group": "Réseaux & cybersécurité"
+    },
+    {
         "id": "cisco-routeurs-physiques",
         "title": "Cisco · Routeurs physiques et console série",
         "summary": "Raccorder plusieurs routeurs Cisco et les configurer en ligne de commande depuis un PC.",
@@ -837,7 +866,7 @@ const projets = [
     if (tbody) {
         projets.forEach((project) => {
             const row = document.createElement('tr');
-            row.innerHTML = `<th scope="row"><a href="realisations.html#${project.id}">${escapeHTML(project.title)}</a></th>` + Object.keys(names).map((key) => `<td>${project.skills.includes(Number(key)) ? '<span class="check" aria-hidden="true">✓</span><span class="sr-only">Mobilisée, à valider</span>' : '<span aria-hidden="true">—</span><span class="sr-only">Non renseignée</span>'}</td>`).join('');
+            row.innerHTML = `<th scope="row"><a href="realisations.html#${project.id}">${escapeHTML(project.title)}</a></th>` + Object.keys(names).map((key) => `<td>${project.skills.includes(Number(key)) ? '<span class="check" aria-hidden="true">✓</span><span class="sr-only">Mobilisée</span>' : '<span aria-hidden="true">—</span><span class="sr-only">Non mobilisée</span>'}</td>`).join('');
             tbody.append(row);
         });
     }
@@ -877,7 +906,7 @@ const projets = [
         const project = projets.find((item) => item.id === id);
         if (!project) return;
         opener = source || document.activeElement;
-        detail.innerHTML = `<h2 id="project-title">${escapeHTML(project.title)}</h2><div class="badges">${project.technologies.map((tech) => `<span class="badge">${escapeHTML(tech)}</span>`).join('')}</div><h3>Contexte</h3><p>${escapeHTML(project.context)}</p><h3>Objectif</h3><p>${escapeHTML(project.objective)}</p><h3>Étapes et composants du projet</h3><ol>${project.steps.map((step) => `<li>${escapeHTML(step)}</li>`).join('')}</ol>${project.difficulty && !project.difficulty.startsWith('[À COMPLÉTER') && !project.difficulty.startsWith('Les difficultés rencontrées restent') ? `<h3>Difficultés et solutions</h3><p>${escapeHTML(project.difficulty)}</p>` : ''}${project.contribution && !project.contribution.startsWith('[À COMPLÉTER') ? `<h3>Ma contribution et les résultats</h3><p>${escapeHTML(project.contribution)}</p>` : ''}<h3>Compétences du Bloc 1</h3><ul>${project.skills.map((id) => `<li>${names[id]}</li>`).join('')}</ul><p class="notice">Correspondances proposées à vérifier avec les preuves et le tableau officiel de la session.</p>`;
+        detail.innerHTML = `<h2 id="project-title">${escapeHTML(project.title)}</h2><div class="badges">${project.technologies.map((tech) => `<span class="badge">${escapeHTML(tech)}</span>`).join('')}</div><h3>Contexte</h3><p>${escapeHTML(project.context)}</p><h3>Objectif</h3><p>${escapeHTML(project.objective)}</p><h3>Étapes et composants du projet</h3><ol>${project.steps.map((step) => `<li>${escapeHTML(step)}</li>`).join('')}</ol>${project.difficulty && !project.difficulty.startsWith('[À COMPLÉTER') && !project.difficulty.startsWith('Les difficultés rencontrées restent') ? `<h3>Difficultés et solutions</h3><p>${escapeHTML(project.difficulty)}</p>` : ''}${project.contribution && !project.contribution.startsWith('[À COMPLÉTER') ? `<h3>Ma contribution et les résultats</h3><p>${escapeHTML(project.contribution)}</p>` : ''}<h3>Compétences du Bloc 1</h3><ul>${project.skills.map((id) => `<li>${names[id]}</li>`).join('')}</ul><p class="notice">Retrouvez la correspondance complète avec le Bloc 1 sur la page Compétences.</p>`;
         if(project.video){const figure=document.createElement('figure');figure.className='project-video';figure.innerHTML=`<video controls playsinline preload="metadata" poster="${escapeHTML(project.video.poster)}" aria-label="Démonstration du robot suiveur de ligne"><source src="${escapeHTML(project.video.src)}" type="video/mp4"></video><figcaption>Démonstration du robot suiveur de ligne</figcaption>`;detail.append(figure);}
         if(project.media?.length){const gallery=document.createElement('div');gallery.className='project-media-grid';gallery.innerHTML=project.media.map(m=>`<figure><button class="gallery-trigger" type="button" data-gallery="${escapeHTML(m.src)}" aria-label="${escapeHTML(m.alt)}"><img src="${escapeHTML(m.src)}" alt="${escapeHTML(m.alt)}" loading="lazy"></button><figcaption>${escapeHTML(m.alt)}</figcaption></figure>`).join('');const heading=document.createElement('h3');heading.textContent='Photos du projet';detail.append(heading,gallery);}
         if (project.pdf && /^[a-z0-9-]+\.pdf$/i.test(project.pdf)) {
