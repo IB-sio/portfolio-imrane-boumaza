@@ -1,3 +1,0 @@
-# Ce fichier explique le contenu attendu dans ce dossier.
-
-Votre photo : profil.webp. Remplacez le bloc portrait-placeholder de index.html par une balise img avec alt="Portrait d’Imrane Boumaza" et des dimensions.
