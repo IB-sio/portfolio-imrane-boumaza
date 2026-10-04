@@ -147,3 +147,4 @@ figcaption,.evidence-note { font-size:12px; line-height:1.6; margin-top:10px; }
 
 /* Champ anti-spam Formspree, absent de la mise en page. */
 .form-honeypot { display: none; }
+.form-captcha { margin-bottom: 22px; min-height: 65px; }

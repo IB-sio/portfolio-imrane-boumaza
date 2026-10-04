@@ -1,4 +1,4 @@
-/* Valide le formulaire et l'envoie uniquement si Formspree est configuré. */
+/* Valide le formulaire, vérifie Turnstile et l'envoie via Formspree. */
 (() => {
     'use strict';
     /* ===== CONFIGURATION ===== */
@@ -30,6 +30,16 @@
             status.textContent = 'Formulaire valide, mais aucun message n’a été envoyé : le service d’envoi est à configurer. Contactez-moi directement à imranebmz.pro@gmail.com.';
             return;
         }
+        /* ===== VÉRIFICATION ANTI-ROBOT (Cloudflare Turnstile) ===== */
+        if (!window.turnstile) {
+            status.textContent = 'La vérification anti-robot n’a pas pu se charger. Désactivez votre bloqueur de publicités pour ce site ou écrivez-moi directement à imranebmz.pro@gmail.com.';
+            return;
+        }
+        const captcha = form.querySelector('[name="cf-turnstile-response"]');
+        if (!captcha || !captcha.value) {
+            status.textContent = 'Merci de valider la vérification anti-robot.';
+            return;
+        }
         submit.disabled = true;
         status.textContent = 'Envoi en cours…';
         try {
@@ -39,6 +49,10 @@
             form.reset();
         } catch (error) {
             status.textContent = 'Le message n’a pas pu être envoyé. Vos informations sont conservées dans les champs ; réessayez ou utilisez mon email.';
-        } finally { submit.disabled = false; }
+        } finally {
+            submit.disabled = false;
+            /* Un jeton Turnstile ne sert qu’une fois : on en demande un nouveau. */
+            if (window.turnstile) window.turnstile.reset();
+        }
     });
 })();

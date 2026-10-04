@@ -404,6 +404,8 @@ window.PORTFOLIO_I18N.ar={
   "Envoi en cours…": "جارٍ الإرسال…",
   "Votre message a bien été envoyé. Merci !": "تم إرسال رسالتك. شكرًا!",
   "Le message n’a pas pu être envoyé. Vos informations sont conservées dans les champs ; réessayez ou utilisez mon email.": "تعذر إرسال الرسالة. بقيت بياناتك في الحقول؛ حاول مجددًا أو تواصل عبر البريد الإلكتروني.",
+  "Merci de valider la vérification anti-robot.": "يرجى إكمال التحقق من أنك لست روبوتًا.",
+  "La vérification anti-robot n’a pas pu se charger. Désactivez votre bloqueur de publicités pour ce site ou écrivez-moi directement à imranebmz.pro@gmail.com.": "تعذّر تحميل التحقق من أنك لست روبوتًا. يرجى تعطيل مانع الإعلانات لهذا الموقع أو مراسلتي مباشرة على imranebmz.pro@gmail.com.",
   "Choisir la langue": "اختيار اللغة",
   "Accueil": "الرئيسية",
   "Formation": "الدراسة",

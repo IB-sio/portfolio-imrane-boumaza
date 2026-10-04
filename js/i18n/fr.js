@@ -581,6 +581,8 @@ window.PORTFOLIO_I18N.fr={
   "Envoi en cours…": "Envoi en cours…",
   "Votre message a bien été envoyé. Merci !": "Votre message a bien été envoyé. Merci !",
   "Le message n’a pas pu être envoyé. Vos informations sont conservées dans les champs ; réessayez ou utilisez mon email.": "Le message n’a pas pu être envoyé. Vos informations sont conservées dans les champs ; réessayez ou utilisez mon email.",
+  "Merci de valider la vérification anti-robot.": "Merci de valider la vérification anti-robot.",
+  "La vérification anti-robot n’a pas pu se charger. Désactivez votre bloqueur de publicités pour ce site ou écrivez-moi directement à imranebmz.pro@gmail.com.": "La vérification anti-robot n’a pas pu se charger. Désactivez votre bloqueur de publicités pour ce site ou écrivez-moi directement à imranebmz.pro@gmail.com.",
   "Choisir la langue": "Choisir la langue",
   "Stage dans une épicerie de spécialités à Pau, du 25 mai au 26 juin 2026.": "Stage dans une épicerie de spécialités à Pau, du 25 mai au 26 juin 2026.",
   "Mise en forme avec Tailwind CSS": "Mise en forme avec Tailwind CSS",

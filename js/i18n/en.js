@@ -404,6 +404,8 @@ window.PORTFOLIO_I18N.en={
   "Envoi en cours…": "Sending…",
   "Votre message a bien été envoyé. Merci !": "Your message has been sent. Thank you!",
   "Le message n’a pas pu être envoyé. Vos informations sont conservées dans les champs ; réessayez ou utilisez mon email.": "The message could not be sent. Your entries are still in the form; please try again or email me.",
+  "Merci de valider la vérification anti-robot.": "Please complete the anti-robot check.",
+  "La vérification anti-robot n’a pas pu se charger. Désactivez votre bloqueur de publicités pour ce site ou écrivez-moi directement à imranebmz.pro@gmail.com.": "The anti-robot check could not load. Please disable your ad blocker for this site or email me directly at imranebmz.pro@gmail.com.",
   "Choisir la langue": "Choose a language",
   "Accueil": "Home",
   "Formation": "Education",

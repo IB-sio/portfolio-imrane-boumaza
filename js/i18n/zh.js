@@ -404,6 +404,8 @@ window.PORTFOLIO_I18N.zh={
   "Envoi en cours…": "正在发送…",
   "Votre message a bien été envoyé. Merci !": "留言已发送，谢谢！",
   "Le message n’a pas pu être envoyé. Vos informations sont conservées dans les champs ; réessayez ou utilisez mon email.": "消息发送失败。填写内容已保留，请重试或通过邮件联系。",
+  "Merci de valider la vérification anti-robot.": "请完成人机验证。",
+  "La vérification anti-robot n’a pas pu se charger. Désactivez votre bloqueur de publicités pour ce site ou écrivez-moi directement à imranebmz.pro@gmail.com.": "人机验证无法加载。请为本网站停用广告拦截插件，或直接发送邮件至 imranebmz.pro@gmail.com。",
   "Choisir la langue": "选择语言",
   "Accueil": "首页",
   "Formation": "教育背景",
