@@ -1,3 +1,0 @@
-# Ce fichier explique le contenu attendu dans ce dossier.
-
-Placez ici vos neuf documentations PDF. Noms prévus : ap-fruit.pdf, infrastructure-domaine.pdf, ha-active-directory.pdf, dns-bind9.pdf, pare-feu-pfsense.pdf, nextcloud-ldap.pdf, pile-lemp.pdf, epicerie-du-monde.pdf, cisco-packet-tracer.pdf. Renseignez ensuite la propriété pdf de chaque objet dans js/realisations.js, par exemple pdf: "dns-bind9.pdf".
