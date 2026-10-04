@@ -1,0 +1,3 @@
+# Ce fichier explique le contenu attendu dans ce dossier.
+
+Placez ici le tableau officiel de votre session remis par le professeur, complété et validé : tableau-synthese.pdf. Remplacez le bouton désactivé dans pages/competences.html par un lien href="../assets/docs/tableau-synthese/tableau-synthese.pdf" avec download. Le tableau HTML du site est une proposition, pas le document officiel.

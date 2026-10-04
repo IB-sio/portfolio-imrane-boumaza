@@ -1,0 +1,8 @@
+Captures authentiques du stage 1
+
+stage1-rapport-* : images extraites du rapport fourni.
+stage1-*-desktop.webp et stage1-*-mobile.webp : captures du site en ligne.
+epicerie-du-monde-logo.webp : logo extrait du rapport.
+
+Les captures de Figma, Builder.io et VS Code ne sont pas présentes dans le rapport : aucune reconstitution n’a été ajoutée.
+La galerie et les légendes sont dans pages/stages.html ; leurs traductions se modifient dans js/i18n/.
