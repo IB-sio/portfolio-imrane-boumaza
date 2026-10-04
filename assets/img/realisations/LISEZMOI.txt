@@ -1,0 +1,3 @@
+# Ce fichier explique le contenu attendu dans ce dossier.
+
+Captures des TP, avec des noms comme dns-bind9.webp. Ajoutez une image dans une fiche de projet si utile ; masquez les secrets et les informations non destinées au public.
