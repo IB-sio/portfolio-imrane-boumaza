@@ -1054,5 +1054,17 @@ window.PORTFOLIO_I18N.zh={
   "Caméras, enregistreurs vidéo et routeurs Wi-Fi.": "摄像头、录像机和 Wi-Fi 路由器。",
   "CONTACT / CONFIRMATION": "联系 / 确认",
   "Activez JavaScript pour changer de langue et de thème.": "请启用 JavaScript 以切换语言和主题。",
-  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "Cloudflare 介绍了31.4 Tbps的峰值，以及随后每秒超过2亿次请求的 Aisuru-Kimwolf 攻击活动。受感染的 Android TV 也参与其中。我注意区分网络流量速率与请求数量。"
+  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "Cloudflare 介绍了31.4 Tbps的峰值，以及随后每秒超过2亿次请求的 Aisuru-Kimwolf 攻击活动。受感染的 Android TV 也参与其中。我注意区分网络流量速率与请求数量。",
+  "Joindre des fichiers": "添加附件",
+  "Jusqu’à 10 fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG, 10 Mo maximum au total. Facultatif.": "可选：最多10个 PDF、DOCX、XLSX、PPTX、ZIP、PNG 或 JPG 文件，总大小不超过10 MB。",
+  "Fichiers trop lourds (10 Mo max au total). Pour un fichier plus gros, utilisez le champ lien ci-dessous.": "文件总大小过大（最多10 MB）。如需发送更大的文件，请使用下方的链接栏。",
+  "10 fichiers maximum. Retirez un fichier avant d’en ajouter un autre.": "最多10个文件。请先移除一个文件，再添加其他文件。",
+  "Format non autorisé. Choisissez des fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG.": "不支持此格式。请选择 PDF、DOCX、XLSX、PPTX、ZIP、PNG 或 JPG 文件。",
+  "Lien vers un fichier volumineux (WeTransfer, Google Drive, OneDrive…)": "大文件链接（WeTransfer、Google Drive、OneDrive…）",
+  "Pour un fichier de plus de 10 Mo, envoyez-le gratuitement sur wetransfer.com puis collez le lien ici.": "文件超过10 MB时，可免费上传到 wetransfer.com，然后将链接粘贴到这里。",
+  "Facultatif": "可选",
+  "Saisissez un lien valide commençant par https://.": "请输入以 https:// 开头的有效链接。",
+  "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "您的浏览器无法添加这些文件。请使用下方的链接栏。",
+  "Mo": "MB",
+  "Pièces jointes": "附件"
 };

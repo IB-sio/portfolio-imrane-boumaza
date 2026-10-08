@@ -1054,5 +1054,17 @@ window.PORTFOLIO_I18N.ar={
   "Caméras, enregistreurs vidéo et routeurs Wi-Fi.": "كاميرات ومسجّلات فيديو وموجّهات Wi-Fi.",
   "CONTACT / CONFIRMATION": "تواصل / تأكيد",
   "Activez JavaScript pour changer de langue et de thème.": "فعّل JavaScript لتغيير اللغة والمظهر.",
-  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "تصف Cloudflare ذروة بلغت 31.4 تيرابت/ثانية، ثم حملة Aisuru-Kimwolf تجاوزت 200 مليون طلب في الثانية. شاركت فيها أجهزة Android TV مصابة. أميّز بين معدل نقل البيانات وعدد الطلبات."
+  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "تصف Cloudflare ذروة بلغت 31.4 تيرابت/ثانية، ثم حملة Aisuru-Kimwolf تجاوزت 200 مليون طلب في الثانية. شاركت فيها أجهزة Android TV مصابة. أميّز بين معدل نقل البيانات وعدد الطلبات.",
+  "Joindre des fichiers": "إرفاق ملفات",
+  "Jusqu’à 10 fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG, 10 Mo maximum au total. Facultatif.": "حتى 10 ملفات بصيغ PDF أو DOCX أو XLSX أو PPTX أو ZIP أو PNG أو JPG، بحد إجمالي 10 ميغابايت. اختياري.",
+  "Fichiers trop lourds (10 Mo max au total). Pour un fichier plus gros, utilisez le champ lien ci-dessous.": "الملفات كبيرة جداً (10 ميغابايت كحد أقصى إجمالي). للملفات الأكبر، استخدم حقل الرابط أدناه.",
+  "10 fichiers maximum. Retirez un fichier avant d’en ajouter un autre.": "الحد الأقصى 10 ملفات. احذف ملفاً قبل إضافة ملف آخر.",
+  "Format non autorisé. Choisissez des fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG.": "صيغة غير مسموحة. اختر ملفات PDF أو DOCX أو XLSX أو PPTX أو ZIP أو PNG أو JPG.",
+  "Lien vers un fichier volumineux (WeTransfer, Google Drive, OneDrive…)": "رابط ملف كبير (WeTransfer، Google Drive، OneDrive…)",
+  "Pour un fichier de plus de 10 Mo, envoyez-le gratuitement sur wetransfer.com puis collez le lien ici.": "للملفات الأكبر من 10 ميغابايت، ارفعها مجاناً على wetransfer.com ثم الصق الرابط هنا.",
+  "Facultatif": "اختياري",
+  "Saisissez un lien valide commençant par https://.": "أدخل رابطاً صالحاً يبدأ بـ https://.",
+  "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "لا يتيح متصفحك إضافة هذه الملفات. استخدم حقل الرابط أدناه.",
+  "Mo": "ميغابايت",
+  "Pièces jointes": "المرفقات"
 };

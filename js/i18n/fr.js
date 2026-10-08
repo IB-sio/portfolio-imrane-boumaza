@@ -1054,5 +1054,17 @@ window.PORTFOLIO_I18N.fr={
   "Caméras, enregistreurs vidéo et routeurs Wi-Fi.": "Caméras, enregistreurs vidéo et routeurs Wi-Fi.",
   "CONTACT / CONFIRMATION": "CONTACT / CONFIRMATION",
   "Activez JavaScript pour changer de langue et de thème.": "Activez JavaScript pour changer de langue et de thème.",
-  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes."
+  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.",
+  "Joindre des fichiers": "Joindre des fichiers",
+  "Jusqu’à 10 fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG, 10 Mo maximum au total. Facultatif.": "Jusqu’à 10 fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG, 10 Mo maximum au total. Facultatif.",
+  "Fichiers trop lourds (10 Mo max au total). Pour un fichier plus gros, utilisez le champ lien ci-dessous.": "Fichiers trop lourds (10 Mo max au total). Pour un fichier plus gros, utilisez le champ lien ci-dessous.",
+  "10 fichiers maximum. Retirez un fichier avant d’en ajouter un autre.": "10 fichiers maximum. Retirez un fichier avant d’en ajouter un autre.",
+  "Format non autorisé. Choisissez des fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG.": "Format non autorisé. Choisissez des fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG.",
+  "Lien vers un fichier volumineux (WeTransfer, Google Drive, OneDrive…)": "Lien vers un fichier volumineux (WeTransfer, Google Drive, OneDrive…)",
+  "Pour un fichier de plus de 10 Mo, envoyez-le gratuitement sur wetransfer.com puis collez le lien ici.": "Pour un fichier de plus de 10 Mo, envoyez-le gratuitement sur wetransfer.com puis collez le lien ici.",
+  "Facultatif": "Facultatif",
+  "Saisissez un lien valide commençant par https://.": "Saisissez un lien valide commençant par https://.",
+  "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.",
+  "Mo": "Mo",
+  "Pièces jointes": "Pièces jointes"
 };

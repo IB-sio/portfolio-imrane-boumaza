@@ -173,3 +173,11 @@ figcaption,.evidence-note { font-size:12px; line-height:1.6; margin-top:10px; }
 [data-page="contact"] .attachment-selected[hidden] { display: none; }
 [data-page="contact"] #attachment-name { overflow-wrap: anywhere; min-width: 0; flex: 1; font-size: 14px; }
 [data-page="contact"] .attachment-selected button { flex-shrink: 0; }
+
+/* Liste des pièces jointes du formulaire uniquement. */
+[data-page="contact"] .attachment-list { list-style: none; padding: 0; margin-block: 12px; display: grid; gap: 8px; }
+[data-page="contact"] .attachment-list[hidden] { display: none; }
+[data-page="contact"] .attachment-detail { display: grid; gap: 4px; min-width: 0; flex: 1; }
+[data-page="contact"] .attachment-filename { overflow-wrap: anywhere; font-size: 14px; }
+[data-page="contact"] .attachment-detail small { color: var(--muted); }
+[data-page="contact"] .attachment-link-field { margin-block-start: 20px; }

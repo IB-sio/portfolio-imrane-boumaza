@@ -1054,5 +1054,17 @@ window.PORTFOLIO_I18N.en={
   "Caméras, enregistreurs vidéo et routeurs Wi-Fi.": "Cameras, video recorders and Wi-Fi routers.",
   "CONTACT / CONFIRMATION": "CONTACT / CONFIRMATION",
   "Activez JavaScript pour changer de langue et de thème.": "Enable JavaScript to change the language and theme.",
-  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "Cloudflare describes a 31.4 Tbps peak, then an Aisuru-Kimwolf campaign exceeding 200 million requests per second. Infected Android TVs took part. I distinguish network bandwidth from the number of requests."
+  "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-Kimwolf dépassant 200 millions de requêtes par seconde. Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes.": "Cloudflare describes a 31.4 Tbps peak, then an Aisuru-Kimwolf campaign exceeding 200 million requests per second. Infected Android TVs took part. I distinguish network bandwidth from the number of requests.",
+  "Joindre des fichiers": "Attach files",
+  "Jusqu’à 10 fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG, 10 Mo maximum au total. Facultatif.": "Up to 10 PDF, DOCX, XLSX, PPTX, ZIP, PNG or JPG files, 10 MB in total. Optional.",
+  "Fichiers trop lourds (10 Mo max au total). Pour un fichier plus gros, utilisez le champ lien ci-dessous.": "Files are too large (10 MB total maximum). For a larger file, use the link field below.",
+  "10 fichiers maximum. Retirez un fichier avant d’en ajouter un autre.": "Maximum 10 files. Remove a file before adding another.",
+  "Format non autorisé. Choisissez des fichiers PDF, DOCX, XLSX, PPTX, ZIP, PNG ou JPG.": "Unsupported format. Choose PDF, DOCX, XLSX, PPTX, ZIP, PNG or JPG files.",
+  "Lien vers un fichier volumineux (WeTransfer, Google Drive, OneDrive…)": "Link to a large file (WeTransfer, Google Drive, OneDrive…)",
+  "Pour un fichier de plus de 10 Mo, envoyez-le gratuitement sur wetransfer.com puis collez le lien ici.": "For a file larger than 10 MB, upload it for free at wetransfer.com, then paste the link here.",
+  "Facultatif": "Optional",
+  "Saisissez un lien valide commençant par https://.": "Enter a valid link starting with https://.",
+  "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "Your browser cannot add these files. Use the link field below.",
+  "Mo": "MB",
+  "Pièces jointes": "Attachments"
 };
