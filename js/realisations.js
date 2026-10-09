@@ -871,10 +871,42 @@ const projets = [
         });
     }
     const grid = document.getElementById('projects-grid');
-    if (!grid) return;
+    const onCompetences = document.body.dataset.page === 'competences';
+    if (!grid && !onCompetences) return;
+    // Un seul composant et les mêmes données pour les deux pages.
+    document.body.insertAdjacentHTML('beforeend', "<dialog id=\"project-dialog\" aria-labelledby=\"project-title\"><div class=\"dialog-bar\"><span class=\"eyebrow\">FICHE / RÉALISATION</span><button class=\"icon-button\" id=\"close-project\" type=\"button\" autofocus aria-label=\"Fermer la fiche du projet\">Fermer ×</button></div><div id=\"project-detail\" class=\"dialog-content\"></div></dialog><dialog id=\"gallery-dialog\" aria-label=\"Galerie de captures\"><div class=\"dialog-bar\"><button type=\"button\" class=\"icon-button\" data-gallery-prev aria-label=\"Image précédente\">←</button><span class=\"gallery-counter\"></span><button type=\"button\" class=\"icon-button\" data-gallery-next aria-label=\"Image suivante\">→</button><button type=\"button\" class=\"icon-button\" data-gallery-close>Fermer</button></div><figure><img class=\"gallery-large\" alt=\"\"><figcaption class=\"gallery-caption\"></figcaption></figure></dialog>");
     const dialog = document.getElementById('project-dialog');
     const detail = document.getElementById('project-detail');
-    let opener = null;
+    let opener = null, savedScroll = null, closing = false, closeTimer = null;
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    function lockPage() {
+        if (savedScroll) return;
+        const body = document.body;
+        savedScroll = {x: scrollX, y: scrollY, top: body.style.top, padding: body.style.paddingInlineEnd};
+        const gap = Math.max(0, innerWidth - document.documentElement.clientWidth);
+        const padding = parseFloat(getComputedStyle(body).paddingInlineEnd) || 0;
+        body.style.top = '-' + savedScroll.y + 'px';
+        body.style.paddingInlineEnd = (padding + gap) + 'px';
+        body.classList.add('project-scroll-locked', 'modal-open');
+    }
+    function unlockPage() {
+        if (!savedScroll) return;
+        const position = savedScroll; savedScroll = null;
+        document.body.classList.remove('project-scroll-locked', 'modal-open');
+        document.body.style.top = position.top;
+        document.body.style.paddingInlineEnd = position.padding;
+        window.scrollTo({left: position.x, top: position.y, behavior: 'instant'});
+    }
+    function closeProject() {
+        if (!dialog.open || closing) return;
+        closing = true;
+        if (reducedMotion.matches) { dialog.close(); return; }
+        dialog.classList.add('is-closing');
+        closeTimer = setTimeout(() => dialog.close(), 200);
+    }
+    reducedMotion.addEventListener('change', () => {
+        if (reducedMotion.matches && closing) { clearTimeout(closeTimer); dialog.close(); }
+    });
     /* ===== CARTES ET FILTRAGE ===== */
     function render(category = 'Tout') {
         const visible = projets.filter((project) => category === 'Tout' || project.categories.includes(category));
@@ -920,20 +952,47 @@ const projets = [
         if (project.id === 'epicerie-du-monde') {
             const link = document.createElement('a'); link.className = 'button'; link.href = 'stages.html#stage-1'; link.textContent = 'Lire le bilan du stage'; detail.append(link);
         }
+        closing = false; clearTimeout(closeTimer); dialog.classList.remove('is-closing');
+        lockPage();
         if (!dialog.open) dialog.showModal();
-        document.body.classList.add('modal-open');
-        history.replaceState(null, '', '#' + project.id);
+        dialog.scrollTop = 0;
+        if (!onCompetences) history.replaceState(history.state, '', '#' + project.id);
     }
-    grid.addEventListener('click', (event) => { const button = event.target.closest('[data-project]'); if (button) openProject(button.dataset.project, button); });
-    document.getElementById('close-project').addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', (event) => { if (event.target === dialog) { const box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close(); } });
-    dialog.addEventListener('close', () => {
-        detail.querySelectorAll('video').forEach(video=>video.pause());
-        document.body.classList.remove('modal-open');
-        history.replaceState(null, '', location.pathname + location.search);
-        if (opener && opener.isConnected) opener.focus();
+    grid?.addEventListener('click', event => {
+        const button = event.target.closest('[data-project]');
+        if (button) openProject(button.dataset.project, button);
     });
-    render();
-    if (location.hash) openProject(location.hash.slice(1));
-    window.addEventListener('hashchange', () => { if (location.hash) openProject(location.hash.slice(1)); });
+    if (onCompetences) {
+        document.addEventListener('click', event => {
+            const link = event.target.closest('a[href]');
+            if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+            const target = new URL(link.href, location.href);
+            if (target.origin !== location.origin || !target.pathname.endsWith('/realisations.html')) return;
+            const id = target.hash.slice(1);
+            if (!projets.some(project => project.id === id)) return;
+            event.preventDefault(); openProject(id, link);
+        });
+        document.querySelectorAll('main a[href*="realisations.html#"]').forEach(link => {
+            link.setAttribute('aria-haspopup', 'dialog'); link.setAttribute('aria-controls', 'project-dialog');
+        });
+    }
+    document.getElementById('close-project').addEventListener('click', closeProject);
+    dialog.addEventListener('cancel', event => { event.preventDefault(); closeProject(); });
+    dialog.addEventListener('click', event => {
+        if (event.target !== dialog) return;
+        const box = dialog.getBoundingClientRect();
+        if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closeProject();
+    });
+    dialog.addEventListener('close', () => {
+        clearTimeout(closeTimer); closing = false; dialog.classList.remove('is-closing');
+        detail.querySelectorAll('video').forEach(video => video.pause());
+        unlockPage();
+        if (!onCompetences) history.replaceState(history.state, '', location.pathname + location.search);
+        if (opener?.isConnected) opener.focus({preventScroll: true});
+    });
+    if (grid) {
+        render();
+        if (location.hash) openProject(location.hash.slice(1));
+        window.addEventListener('hashchange', () => { if (location.hash) openProject(location.hash.slice(1)); });
+    }
 })();

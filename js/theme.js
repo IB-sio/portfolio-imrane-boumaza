@@ -5,8 +5,10 @@
     let theme = 'light';
     try { theme = localStorage.getItem('portfolio-theme') === 'dark' ? 'dark' : 'light'; } catch (error) { /* Stockage facultatif. */ }
     document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
     /* ===== ÉVÉNEMENT DÉLÉGUÉ AU BOUTON COMMUN ===== */
     function updateLabel() {
+        document.documentElement.style.colorScheme = document.documentElement.dataset.theme;
         const button = document.querySelector('[data-theme-toggle]');
         if (button) {
             const light = document.documentElement.dataset.theme === 'light';

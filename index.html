@@ -20,12 +20,25 @@
     <meta name="color-scheme" content="dark light">
     <title>Accueil — Imrane Boumaza</title>
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/variables.css?v=20261004-13"><link rel="stylesheet" href="css/base.css?v=20261004-13"><link rel="stylesheet" href="css/layout.css?v=20261004-13"><link rel="stylesheet" href="css/components.css?v=20261004-13"><link rel="stylesheet" href="css/pages.css?v=20261004-13">
-    <script src="js/theme.js?v=20261004-13"></script>
-    <script src="js/navigation.js?v=20261004-13" defer></script>
+    <script>
+    /* Préférences appliquées avant les feuilles de style et le premier affichage. */
+    (() => {
+        const root = document.documentElement;
+        try {
+            root.dataset.theme = localStorage.getItem('portfolio-theme') === 'dark' ? 'dark' : 'light';
+            const lang = localStorage.getItem('portfolio-language');
+            root.lang = ['fr', 'en', 'ar', 'zh'].includes(lang) ? lang : 'fr';
+            root.dir = root.lang === 'ar' ? 'rtl' : 'ltr';
+        } catch (_) { root.dataset.theme = 'light'; root.lang = 'fr'; root.dir = 'ltr'; }
+        root.style.colorScheme = root.dataset.theme;
+    })();
+    </script>
+    <link rel="stylesheet" href="css/variables.css?v=20261008-17"><link rel="stylesheet" href="css/base.css?v=20261008-17"><link rel="stylesheet" href="css/layout.css?v=20261008-17"><link rel="stylesheet" href="css/components.css?v=20261008-17"><link rel="stylesheet" href="css/pages.css?v=20261008-17">
+    <script src="js/theme.js?v=20261008-17"></script>
+    <script src="js/navigation.js?v=20261008-17" defer></script>
 
     
-<script src="js/i18n/fr.js?v=20261004-13" defer></script><script src="js/i18n/en.js?v=20261004-13" defer></script><script src="js/i18n/ar.js?v=20261004-13" defer></script><script src="js/i18n/zh.js?v=20261004-13" defer></script><script src="js/i18n.js?v=20261004-13" defer></script><script src="js/animations.js?v=20261004-13" defer></script>
+<script src="js/i18n/fr.js?v=20261008-17" defer></script><script src="js/i18n/en.js?v=20261008-17" defer></script><script src="js/i18n/ar.js?v=20261008-17" defer></script><script src="js/i18n/zh.js?v=20261008-17" defer></script><script src="js/i18n.js?v=20261008-17" defer></script><script src="js/animations.js?v=20261008-17" defer></script>
 </head>
 <body data-page="index">
     <a class="skip-link" href="#contenu">Aller au contenu</a>
