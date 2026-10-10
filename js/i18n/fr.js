@@ -235,7 +235,6 @@ window.PORTFOLIO_I18N.fr={
   "LinkedIn": "LinkedIn",
   "Ouvrir mon CV fourni (PDF)": "Ouvrir mon CV fourni (PDF)",
   "Un message": "Un message",
-  "Vous pouvez déjà me contacter directement par email.": "Vous pouvez déjà me contacter directement par email.",
   "Nom": "Nom",
   "Email": "Email",
   "Message": "Message",
@@ -1068,5 +1067,17 @@ window.PORTFOLIO_I18N.fr={
   "Installation d’OS": "Installation d’OS",
   "Diagnostic": "Diagnostic",
   "Matériel": "Matériel",
-  "Support utilisateur": "Support utilisateur"
+  "Support utilisateur": "Support utilisateur",
+  "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.": "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.",
+  "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider.": "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider.",
+  "Consulter mes notes de procédure (PDF)": "Consulter mes notes de procédure (PDF)",
+  "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation.": "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation.",
+  "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction.": "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction.",
+  "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai.": "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai.",
+  "Module de commande des moteurs : borniers et fils de liaison avec le montage.": "Module de commande des moteurs : borniers et fils de liaison avec le montage.",
+  "Carte de commande installée sur la plaque d’essai, avant le câblage.": "Carte de commande installée sur la plaque d’essai, avant le câblage.",
+  "Vous pouvez aussi me contacter directement par email.": "Vous pouvez aussi me contacter directement par email.",
+  "Voir le certificat (PDF)": "Voir le certificat (PDF)",
+  "Voir le module validé": "Voir le module validé",
+  "Voir mes résultats Cisco": "Voir mes résultats Cisco"
 };

@@ -207,3 +207,20 @@ html { background: var(--bg); }
     #project-dialog[open], #project-dialog[open]::backdrop,
     ::view-transition-old(root), ::view-transition-new(root) { animation: none !important; transition: none !important; }
 }
+
+/* Lisibilité du téléphone, y compris dans les pages en arabe. */
+a[href^="tel:"] { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+/* Confort tactile, sans modifier les couleurs ni la composition générale. */
+@media (max-width: 650px) {
+ input, textarea, select { font-size: 16px; }
+ .dialog-bar { padding: 12px 16px; gap: 8px; flex-wrap: wrap; }
+ .dialog-content { padding: 20px 16px; overflow-wrap: anywhere; }
+ .icon-button, .language-selector button, .attachment-remove { min-height: 44px; min-width: 44px; }
+ .header-tools { margin-left: 0; margin-inline-start: auto; }
+ .brand { min-width: 0; }
+ .brand-word { font-size: 10px; }
+ .brand-word small { font-size: 10px; }
+}
+@media (max-width: 380px) {
+ .brand-word { display: none; }
+}

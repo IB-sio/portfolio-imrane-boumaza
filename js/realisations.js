@@ -104,9 +104,11 @@ const projets = [
             5
         ],
         "contribution": "J’ai installé et configuré Nextcloud sous Linux et travaillé sur l’accès web, le stockage et la résolution des problèmes du service.",
-        "pdf": "",
+        "pdf": "nextcloud-ldap-notes.pdf",
         "pdfExpected": "assets/docs/realisations/nextcloud-ldap.pdf",
-        "group": "Systèmes & services"
+        "group": "Systèmes & services",
+        "pdfLabel": "Consulter mes notes de procédure (PDF)",
+        "documentNote": "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation."
     },
     {
         "id": "nas-lycee",
@@ -263,10 +265,11 @@ const projets = [
             4,
             5
         ],
-        "contribution": "",
-        "pdf": "",
+        "contribution": "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.",
+        "pdf": "ap-fruit.pdf",
         "pdfExpected": "assets/docs/realisations/ap-fruit.pdf",
-        "group": "Réseaux & cybersécurité"
+        "group": "Réseaux & cybersécurité",
+        "documentNote": "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider."
     },
     {
         "id": "pare-feu-pfsense",
@@ -742,19 +745,19 @@ const projets = [
         "media": [
             {
                 "src": "../assets/img/realisations/robot-esp32-vue-ensemble.webp",
-                "alt": "Robot assemblé : batteries, électronique et direction"
+                "alt": "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction."
             },
             {
                 "src": "../assets/img/realisations/robot-esp32-mecanique.webp",
-                "alt": "Châssis du robot et installation des composants"
+                "alt": "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai."
             },
             {
                 "src": "../assets/img/realisations/robot-esp32-cablage.webp",
-                "alt": "Câblage et module de commande des moteurs"
+                "alt": "Module de commande des moteurs : borniers et fils de liaison avec le montage."
             },
             {
                 "src": "../assets/img/realisations/robot-esp32-carte.webp",
-                "alt": "Carte sur plaque d’essai"
+                "alt": "Carte de commande installée sur la plaque d’essai, avant le câblage."
             }
         ],
         "group": "Robotique & maintenance"
@@ -941,6 +944,7 @@ const projets = [
         detail.innerHTML = `<h2 id="project-title">${escapeHTML(project.title)}</h2><div class="badges">${project.technologies.map((tech) => `<span class="badge">${escapeHTML(tech)}</span>`).join('')}</div><h3>Contexte</h3><p>${escapeHTML(project.context)}</p><h3>Objectif</h3><p>${escapeHTML(project.objective)}</p><h3>Étapes et composants du projet</h3><ol>${project.steps.map((step) => `<li>${escapeHTML(step)}</li>`).join('')}</ol>${project.difficulty && !project.difficulty.startsWith('[À COMPLÉTER') && !project.difficulty.startsWith('Les difficultés rencontrées restent') ? `<h3>Difficultés et solutions</h3><p>${escapeHTML(project.difficulty)}</p>` : ''}${project.contribution && !project.contribution.startsWith('[À COMPLÉTER') ? `<h3>Ma contribution et les résultats</h3><p>${escapeHTML(project.contribution)}</p>` : ''}<h3>Compétences du Bloc 1</h3><ul>${project.skills.map((id) => `<li>${names[id]}</li>`).join('')}</ul><p class="notice">Retrouvez la correspondance complète avec le Bloc 1 sur la page Compétences.</p>`;
         if(project.video){const figure=document.createElement('figure');figure.className='project-video';figure.innerHTML=`<video controls playsinline preload="metadata" poster="${escapeHTML(project.video.poster)}" aria-label="Démonstration du robot suiveur de ligne"><source src="${escapeHTML(project.video.src)}" type="video/mp4"></video><figcaption>Démonstration du robot suiveur de ligne</figcaption>`;detail.append(figure);}
         if(project.media?.length){const gallery=document.createElement('div');gallery.className='project-media-grid';gallery.innerHTML=project.media.map(m=>`<figure><button class="gallery-trigger" type="button" data-gallery="${escapeHTML(m.src)}" aria-label="${escapeHTML(m.alt)}"><img src="${escapeHTML(m.src)}" alt="${escapeHTML(m.alt)}" loading="lazy"></button><figcaption>${escapeHTML(m.alt)}</figcaption></figure>`).join('');const heading=document.createElement('h3');heading.textContent='Photos du projet';detail.append(heading,gallery);}
+        if (project.documentNote) { const note = document.createElement('p'); note.className = 'notice'; note.textContent = project.documentNote; detail.append(note); }
         if (project.pdf && /^[a-z0-9-]+\.pdf$/i.test(project.pdf)) {
             const link = document.createElement('a');
             link.className = 'button';
