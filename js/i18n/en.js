@@ -1058,7 +1058,7 @@ window.PORTFOLIO_I18N.en={
   "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "Your browser cannot add these files. Use the link field below.",
   "Mo": "MB",
   "Pièces jointes": "Attachments",
-  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J'ajoute ce que ça change concrètement pour la sécurité d'un réseau.": "For each useful piece of information, I keep the link, the date and a short summary. I add what it means in practical terms for network security.",
+  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J’ajoute ce que ça change concrètement pour la sécurité d’un réseau.": "For each useful piece of information, I keep the link, the date and a short summary. I add what it means in practical terms for network security.",
   "Je suis les nouvelles règles européennes, les attaques récentes et les bons réflexes à avoir, chez soi comme en entreprise.": "I follow new European rules, recent attacks and good security habits, both at home and at work.",
   "Comprendre comment protéger un réseau chez soi et en entreprise.": "Understand how to protect networks at home and at work.",
   "CHEZ SOI ET EN ENTREPRISE": "AT HOME AND AT WORK",

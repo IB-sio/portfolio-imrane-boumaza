@@ -1058,7 +1058,7 @@ window.PORTFOLIO_I18N.ar={
   "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "لا يتيح متصفحك إضافة هذه الملفات. استخدم حقل الرابط أدناه.",
   "Mo": "ميغابايت",
   "Pièces jointes": "المرفقات",
-  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J'ajoute ce que ça change concrètement pour la sécurité d'un réseau.": "لكل معلومة مفيدة، أحتفظ بالرابط والتاريخ وملخّص من بضعة أسطر. وأضيف ما تعنيه عملياً لأمن الشبكة.",
+  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J’ajoute ce que ça change concrètement pour la sécurité d’un réseau.": "لكل معلومة مفيدة، أحتفظ بالرابط والتاريخ وملخّص من بضعة أسطر. وأضيف ما تعنيه عملياً لأمن الشبكة.",
   "Je suis les nouvelles règles européennes, les attaques récentes et les bons réflexes à avoir, chez soi comme en entreprise.": "أتابع القواعد الأوروبية الجديدة والهجمات الحديثة والممارسات الأمنية السليمة، في المنزل وفي الشركات.",
   "Comprendre comment protéger un réseau chez soi et en entreprise.": "فهم كيفية حماية الشبكات في المنزل وفي الشركات.",
   "CHEZ SOI ET EN ENTREPRISE": "في المنزل وفي الشركات",

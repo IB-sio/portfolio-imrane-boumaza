@@ -1058,7 +1058,7 @@ window.PORTFOLIO_I18N.fr={
   "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.",
   "Mo": "Mo",
   "Pièces jointes": "Pièces jointes",
-  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J'ajoute ce que ça change concrètement pour la sécurité d'un réseau.": "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J'ajoute ce que ça change concrètement pour la sécurité d'un réseau.",
+  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J’ajoute ce que ça change concrètement pour la sécurité d’un réseau.": "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J’ajoute ce que ça change concrètement pour la sécurité d’un réseau.",
   "Je suis les nouvelles règles européennes, les attaques récentes et les bons réflexes à avoir, chez soi comme en entreprise.": "Je suis les nouvelles règles européennes, les attaques récentes et les bons réflexes à avoir, chez soi comme en entreprise.",
   "Comprendre comment protéger un réseau chez soi et en entreprise.": "Comprendre comment protéger un réseau chez soi et en entreprise.",
   "CHEZ SOI ET EN ENTREPRISE": "CHEZ SOI ET EN ENTREPRISE",

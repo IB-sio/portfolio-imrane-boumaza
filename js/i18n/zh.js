@@ -1058,7 +1058,7 @@ window.PORTFOLIO_I18N.zh={
   "Votre navigateur ne permet pas cet ajout. Utilisez le champ lien ci-dessous.": "您的浏览器无法添加这些文件。请使用下方的链接栏。",
   "Mo": "MB",
   "Pièces jointes": "附件",
-  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J'ajoute ce que ça change concrètement pour la sécurité d'un réseau.": "每条有用的信息，我都会记录链接、日期和几行摘要，再写下它对网络安全有哪些具体影响。",
+  "Pour chaque info utile, je garde le lien, la date et un résumé de quelques lignes. J’ajoute ce que ça change concrètement pour la sécurité d’un réseau.": "每条有用的信息，我都会记录链接、日期和几行摘要，再写下它对网络安全有哪些具体影响。",
   "Je suis les nouvelles règles européennes, les attaques récentes et les bons réflexes à avoir, chez soi comme en entreprise.": "我关注欧洲的新法规、近期攻击和应养成的安全习惯，既关注家庭，也关注企业。",
   "Comprendre comment protéger un réseau chez soi et en entreprise.": "了解如何保护家庭和企业网络。",
   "CHEZ SOI ET EN ENTREPRISE": "在家庭与企业中",
