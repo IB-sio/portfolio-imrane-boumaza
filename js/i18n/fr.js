@@ -1077,6 +1077,5 @@ window.PORTFOLIO_I18N.fr={
   "Vous pouvez aussi me contacter directement par email.": "Vous pouvez aussi me contacter directement par email.",
   "Voir le certificat (PDF)": "Voir le certificat (PDF)",
   "Voir le module validé": "Voir le module validé",
-  "Voir mes résultats Cisco": "Voir mes résultats Cisco",
-  "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer.": "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer."
+  "Voir mes résultats Cisco": "Voir mes résultats Cisco"
 };

@@ -1077,6 +1077,5 @@ window.PORTFOLIO_I18N.ar={
   "Vous pouvez aussi me contacter directement par email.": "يمكنكم أيضاً التواصل معي مباشرة عبر البريد الإلكتروني.",
   "Voir le certificat (PDF)": "عرض الشهادة (PDF)",
   "Voir le module validé": "عرض الوحدة المجتازة",
-  "Voir mes résultats Cisco": "عرض نتائجي في Cisco",
-  "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer.": "توثيق العمل التطبيقي: إعداد الشبكة وتثبيت Nextcloud وربطه عبر LDAP وخطوات التحقق."
+  "Voir mes résultats Cisco": "عرض نتائجي في Cisco"
 };

@@ -224,3 +224,6 @@ a[href^="tel:"] { direction: ltr; unicode-bidi: isolate; display: inline-block; 
 @media (max-width: 380px) {
  .brand-word { display: none; }
 }
+
+/* Espace entre la preuve et le lien vers la plateforme Cisco. */
+[data-page="certifications"] .card > .button + p { margin-top: 12px; }

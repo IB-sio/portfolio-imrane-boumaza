@@ -1077,6 +1077,5 @@ window.PORTFOLIO_I18N.zh={
   "Vous pouvez aussi me contacter directement par email.": "您也可以直接通过电子邮件联系我。",
   "Voir le certificat (PDF)": "查看证书（PDF）",
   "Voir le module validé": "查看已通过的模块",
-  "Voir mes résultats Cisco": "查看我的 Cisco 学习成果",
-  "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer.": "实验文档：网络准备、Nextcloud 安装、LDAP 集成与检查步骤。"
+  "Voir mes résultats Cisco": "查看我的 Cisco 学习成果"
 };

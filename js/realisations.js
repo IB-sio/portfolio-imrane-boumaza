@@ -107,8 +107,7 @@ const projets = [
         "pdf": "nextcloud-ldap-notes.pdf",
         "pdfExpected": "assets/docs/realisations/nextcloud-ldap.pdf",
         "group": "Systèmes & services",
-        "pdfLabel": "Ouvrir la documentation PDF",
-        "documentNote": "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer."
+        "pdfLabel": "Ouvrir la documentation PDF"
     },
     {
         "id": "nas-lycee",
@@ -948,7 +947,7 @@ const projets = [
         if (project.pdf && /^[a-z0-9-]+\.pdf$/i.test(project.pdf)) {
             const link = document.createElement('a');
             link.className = 'button';
-            link.href = '../assets/docs/realisations/' + project.pdf;
+            link.href = '../assets/docs/realisations/' + project.pdf + (project.id === 'ap-fruit' ? '?v=20261010-3' : '');
             link.target = '_blank'; link.rel = 'noopener noreferrer';
             link.textContent = project.pdfLabel || 'Ouvrir la documentation PDF';
             detail.append(link);
