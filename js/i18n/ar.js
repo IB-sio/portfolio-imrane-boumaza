@@ -1070,8 +1070,6 @@ window.PORTFOLIO_I18N.ar={
   "Support utilisateur": "دعم المستخدمين",
   "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.": "أنجزت الإعداد التقني واختبارات البنية التحتية ضمن ثنائي Mangue.",
   "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider.": "تميّز الوثيقة بين ملاحظات العمل التطبيقي والأمثلة المعاد بناؤها والاختبارات التي تحتاج إلى تحقق.",
-  "Consulter mes notes de procédure (PDF)": "عرض ملاحظات خطوات الإعداد (PDF)",
-  "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation.": "ملاحظات من محادثاتي مع Claude أثناء العمل التطبيقي، تصف خطوات الإعداد وليست تقرير تحقق من النتائج.",
   "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction.": "نظرة عامة: حامل البطارية ولوحة التجارب والأسلاك وآلية التوجيه.",
   "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai.": "تفصيل الجزء الأمامي: آلية التوجيه وموضع لوحة التجارب.",
   "Module de commande des moteurs : borniers et fils de liaison avec le montage.": "وحدة التحكم بالمحركات: أطراف التوصيل والأسلاك المتصلة بالتركيب.",
@@ -1079,5 +1077,6 @@ window.PORTFOLIO_I18N.ar={
   "Vous pouvez aussi me contacter directement par email.": "يمكنكم أيضاً التواصل معي مباشرة عبر البريد الإلكتروني.",
   "Voir le certificat (PDF)": "عرض الشهادة (PDF)",
   "Voir le module validé": "عرض الوحدة المجتازة",
-  "Voir mes résultats Cisco": "عرض نتائجي في Cisco"
+  "Voir mes résultats Cisco": "عرض نتائجي في Cisco",
+  "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer.": "توثيق العمل التطبيقي: إعداد الشبكة وتثبيت Nextcloud وربطه عبر LDAP وخطوات التحقق."
 };

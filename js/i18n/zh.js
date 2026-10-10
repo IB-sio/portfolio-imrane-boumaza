@@ -1070,8 +1070,6 @@ window.PORTFOLIO_I18N.zh={
   "Support utilisateur": "用户支持",
   "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.": "我在 Mangue 双人项目中独立完成了基础设施的技术配置和测试。",
   "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider.": "文档区分了实验观察、重建示例和仍需验证的测试。",
-  "Consulter mes notes de procédure (PDF)": "查看我的操作笔记（PDF）",
-  "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation.": "这些笔记来自实验期间与 Claude 的交流，记录操作步骤，并非测试验证报告。",
   "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction.": "整体视图：电池座、面包板、接线和转向机构。",
   "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai.": "前部细节：转向机构与面包板安装位置。",
   "Module de commande des moteurs : borniers et fils de liaison avec le montage.": "电机驱动模块：接线端子与连接线。",
@@ -1079,5 +1077,6 @@ window.PORTFOLIO_I18N.zh={
   "Vous pouvez aussi me contacter directement par email.": "您也可以直接通过电子邮件联系我。",
   "Voir le certificat (PDF)": "查看证书（PDF）",
   "Voir le module validé": "查看已通过的模块",
-  "Voir mes résultats Cisco": "查看我的 Cisco 学习成果"
+  "Voir mes résultats Cisco": "查看我的 Cisco 学习成果",
+  "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer.": "实验文档：网络准备、Nextcloud 安装、LDAP 集成与检查步骤。"
 };

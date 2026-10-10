@@ -1070,8 +1070,6 @@ window.PORTFOLIO_I18N.en={
   "Support utilisateur": "User support",
   "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.": "I carried out the technical configuration and infrastructure tests as part of the Mangue pair.",
   "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider.": "The documentation separates lab observations, reconstructed examples and tests still to be validated.",
-  "Consulter mes notes de procédure (PDF)": "Read my procedure notes (PDF)",
-  "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation.": "Notes from my conversations with Claude during the lab. They describe the procedure, rather than a validation report.",
   "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction.": "Overview: battery holder, breadboard, wiring and steering mechanism.",
   "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai.": "Front assembly: steering mechanism and breadboard positioning.",
   "Module de commande des moteurs : borniers et fils de liaison avec le montage.": "Motor driver module: terminals and wiring to the assembly.",
@@ -1079,5 +1077,6 @@ window.PORTFOLIO_I18N.en={
   "Vous pouvez aussi me contacter directement par email.": "You can also contact me directly by email.",
   "Voir le certificat (PDF)": "View certificate (PDF)",
   "Voir le module validé": "View completed module",
-  "Voir mes résultats Cisco": "View my Cisco results"
+  "Voir mes résultats Cisco": "View my Cisco results",
+  "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer.": "Lab documentation: network preparation, Nextcloud installation, LDAP integration and verification steps."
 };

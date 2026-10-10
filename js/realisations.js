@@ -107,8 +107,8 @@ const projets = [
         "pdf": "nextcloud-ldap-notes.pdf",
         "pdfExpected": "assets/docs/realisations/nextcloud-ldap.pdf",
         "group": "Systèmes & services",
-        "pdfLabel": "Consulter mes notes de procédure (PDF)",
-        "documentNote": "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation."
+        "pdfLabel": "Ouvrir la documentation PDF",
+        "documentNote": "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer."
     },
     {
         "id": "nas-lycee",

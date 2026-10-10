@@ -1070,8 +1070,6 @@ window.PORTFOLIO_I18N.fr={
   "Support utilisateur": "Support utilisateur",
   "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.": "J’ai réalisé la configuration technique et les essais de l’infrastructure dans le cadre du binôme Mangue.",
   "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider.": "La documentation distingue les observations du TP, les exemples reconstitués et les tests restant à valider.",
-  "Consulter mes notes de procédure (PDF)": "Consulter mes notes de procédure (PDF)",
-  "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation.": "Notes issues de mes échanges avec Claude pendant le TP. Elles décrivent la procédure suivie, sans constituer un compte rendu de validation.",
   "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction.": "Vue d’ensemble : support de batterie, plaque d’essai, câblage et mécanisme de direction.",
   "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai.": "Détail du train avant : mécanisme de direction et implantation de la plaque d’essai.",
   "Module de commande des moteurs : borniers et fils de liaison avec le montage.": "Module de commande des moteurs : borniers et fils de liaison avec le montage.",
@@ -1079,5 +1077,6 @@ window.PORTFOLIO_I18N.fr={
   "Vous pouvez aussi me contacter directement par email.": "Vous pouvez aussi me contacter directement par email.",
   "Voir le certificat (PDF)": "Voir le certificat (PDF)",
   "Voir le module validé": "Voir le module validé",
-  "Voir mes résultats Cisco": "Voir mes résultats Cisco"
+  "Voir mes résultats Cisco": "Voir mes résultats Cisco",
+  "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer.": "Documentation du TP : préparation du réseau, installation de Nextcloud, liaison LDAP et contrôles à effectuer."
 };
