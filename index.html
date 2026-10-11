@@ -92,7 +92,7 @@
     <button class="cookie-btn cookie-btn-accept" onclick="handleConsent(true)">Accepter</button>
   </div>
 <script>
-  const ANALYTICS_ENDPOINT = "https://imrane-analytics-collect.imrane-boumaza.workers.dev/collect";
+  const ANALYTICS_ENDPOINT = "https://imrane-analytics-collect.imrane-boumaza.workers.dev/v1/collect";
 
   function handleConsent(agreed) {
     localStorage.setItem("analytics_consent", agreed ? "granted" : "denied");
