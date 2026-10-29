@@ -25,7 +25,7 @@
   const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=walker.nextNode())translateNode(n);
   document.querySelectorAll('[alt],[aria-label],[placeholder],[title]').forEach(el=>{if(el.closest('[data-no-i18n],.language-selector'))return;let record=attrs.get(el)||{};for(const attr of ['alt','aria-label','placeholder','title']){if(!el.hasAttribute(attr))continue;const value=normal(el.getAttribute(attr));if(!record[attr]||record[attr].last!==value)record[attr]={source:Object.hasOwn(dictionaries.fr,value)?value:(reverse.get(value)||value),last:value};const result=tr(record[attr].source);if(result!==value)el.setAttribute(attr,result);record[attr].last=result;}attrs.set(el,record);});
   document.title=tr(document.title);
-  const base=document.body.dataset.page==='index'?'':'../';document.querySelectorAll('[data-contact="cv"],a[href*="cv-imrane-boumaza"]').forEach(a=>{const href=base+'assets/docs/cv/cv-imrane-boumaza-'+language+'.pdf';if(a.getAttribute('href')!==href)a.setAttribute('href',href);});
+  const base=document.body.dataset.page==='index'?'':'../';document.querySelectorAll('[data-contact="cv"],a[href*="cv-imrane-boumaza"]').forEach(a=>{const href=base+'assets/docs/cv/cv-imrane-boumaza-'+language+'.pdf?v=20261029-cv';if(a.getAttribute('href')!==href)a.setAttribute('href',href);});
   document.querySelectorAll('[data-language]').forEach(b=>{const pressed=String(b.dataset.language===language);if(b.getAttribute('aria-pressed')!==pressed)b.setAttribute('aria-pressed',pressed);});
   running=false;
  }

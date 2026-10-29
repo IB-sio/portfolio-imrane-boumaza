@@ -21,12 +21,7 @@ const projets = [
         "context": "TP sous VirtualBox : SRV-DC1 et SRV-DC2, client Windows 11 et domaine netvision.lan.",
         "objective": "Étudier la continuité de service avec deux contrôleurs de domaine.",
         "steps": [
-            "Deux contrôleurs de domaine",
-            "Services DNS et DHCP",
-            "Partage et organisation des données avec DFS",
-            "Application de stratégies de groupe GPO",
-            "DHCP Failover · FO-NETVISION",
-            "DFS-N / DFS-R",
+            "Partage et organisation des données avec DFS-N / DFS-R",
             "Tests d’arrêt d’un contrôleur et de continuité des services",
             "OU Héros, utilisateurs, groupes et lecteurs réseau",
             "GPO de restriction de l’heure ; vérification avec gpupdate et gpresult",
@@ -190,7 +185,7 @@ const projets = [
             "Waydroid, diagnostic RAM/SSD et températures avec dmidecode, nvme et sensors"
         ],
         "contribution": "Administrer mon environnement Linux et diagnostiquer le matériel de mon ordinateur.",
-        "difficulty": "",
+        "difficulty": "Waydroid refusait de lancer son téléchargement (message « You must provide 'System OTA' and 'Vendor OTA' URLs ») : j'ai renseigné les URL OTA système et fournisseur, et le téléchargement a démarré.",
         "skills": [
             1,
             5
@@ -497,18 +492,19 @@ const projets = [
         ],
         "technologies": [
             "CTF",
-            "Cryptographie",
-            "Hachage",
-            "Certificats"
+            "HTTP/HTTPS",
+            "JavaScript",
+            "Python"
         ],
-        "summary": "Résoudre en équipe des épreuves de cybersécurité lors du challenge national pour lycéens et étudiants.",
-        "context": "Challenge CTF en ligne organisé par le Commandement de la cyberdéfense (COMCYBER) et le ministère de l’Éducation nationale, ouvert aux lycéens et aux étudiants de BTS.",
-        "objective": "Mettre en pratique des notions de cybersécurité sur des épreuves concrètes, en équipe.",
+        "summary": "Première série d’épreuves validée : environ 15 challenges de cybersécurité.",
+        "context": "Capture The Flag (CTF) : des épreuves pratiques de sécurité informatique.",
+        "objective": "Comprendre le fonctionnement des applications et travailler ma méthode de résolution de problèmes.",
         "steps": [
-            "Épreuves de cryptographie : chiffrement, hachage et certificats.",
-            "Sécurité des données et résolution de challenges pratiques en équipe."
+            "Analyse et logique web : inspecteur du navigateur, analyse des requêtes HTTP/HTTPS, manipulation des paramètres et des en-têtes.",
+            "Scripting et automatisation : scripts courts en JavaScript et Python pour tester des cas limites ou automatiser des requêtes simultanées.",
+            "Résolution de problèmes : analyse du fonctionnement des applications, détection de failles de logique et compréhension de la sécurisation côté serveur."
         ],
-        "contribution": "",
+        "contribution": "Première série d’épreuves validée : environ 15 challenges de cybersécurité.",
         "difficulty": "",
         "skills": [
             6
@@ -571,7 +567,7 @@ const projets = [
         ],
         "group": "Réseaux & cybersécurité",
         "contribution": "Identifier la cause d’un incident et corriger la configuration à partir de trois situations rencontrées en TP.",
-        "difficulty": "",
+        "difficulty": "Deux VM clonées avaient la même adresse MAC et ne communiquaient pas : j'ai régénéré l'adresse MAC de l'une d'elles. Une VM passait aussi à l'état « Avortée » faute de RAM sur l'hôte : j'ai réduit la mémoire allouée aux VM.",
         "skills": [
             1,
             2
@@ -808,21 +804,25 @@ const projets = [
         "technologies": [
             "Windows",
             "Linux",
-            "Macrium",
-            "Dual boot"
+            "Dual boot",
+            "PowerShell",
+            "Macrium Reflect",
+            "Acronis",
+            "CrystalDiskInfo"
         ],
-        "summary": "Diagnostiquer des pannes, réparer des postes et accompagner les utilisateurs.",
+        "summary": "Montage, diagnostic, installation Windows/Linux et dual boot. Clonage de disques avec Macrium Reflect et Acronis ; contrôle de l’état des disques avec CrystalDiskInfo. Préparation automatisée de postes avec PowerShell chez InfoDirect.",
         "context": "Pratique au lycée et en stages chez InfoDirect et MatFormatique.",
         "objective": "Diagnostiquer des pannes, réparer des postes et accompagner les utilisateurs.",
         "steps": [
             "Installation de Windows et Linux, y compris en dual boot",
-            "Clonage de disques avec Macrium",
             "Montage, démontage et nettoyage de PC fixes ; démontage de portables",
             "Fiches clients, suivi des interventions et conseil",
-            "Clés USB bootables, paramètres BIOS/UEFI et vérification de l’état des disques."
+            "Clés USB bootables, paramètres BIOS/UEFI et vérification de l’état des disques.",
+            "Création avec l’aide de l’IA et utilisation d’un script PowerShell : installation de logiciels, mises à jour Windows et configuration de Chrome par défaut sur les nouveaux postes clients.",
+            "Réduire les manipulations répétitives pour préparer les postes plus rapidement et pouvoir effectuer d’autres interventions en parallèle."
         ],
         "contribution": "J’ai monté des ordinateurs et des configurations complètes en stage, installé des systèmes et pratiqué le clonage et la maintenance matérielle.",
-        "difficulty": "",
+        "difficulty": "Préparer chaque nouveau PC client à la main obligeait à répéter les mêmes installations et réglages : j'ai créé, avec l'aide de l'IA, un script PowerShell qui installe les logiciels, lance les mises à jour Windows et définit Chrome par défaut, puis je l'ai utilisé chez InfoDirect.",
         "skills": [
             2,
             6
@@ -873,6 +873,7 @@ const projets = [
         });
     }
     const grid = document.getElementById('projects-grid');
+    const featured = document.getElementById('featured-projects');
     const onCompetences = document.body.dataset.page === 'competences';
     if (!grid && !onCompetences) return;
     // Un seul composant et les mêmes données pour les deux pages.
@@ -909,6 +910,79 @@ const projets = [
     reducedMotion.addEventListener('change', () => {
         if (reducedMotion.matches && closing) { clearTimeout(closeTimer); dialog.close(); }
     });
+    const featuredIds = ['ha-active-directory', 'pare-feu-pfsense', 'kali-metasploitable'];
+    // Only match tools actually listed in a project's data. No substitute logos.
+    const toolIcons = [
+        [/^Windows Server/i,'windowsserver'], [/^Windows 11$|^Windows$/i,'windowsserver'],
+        [/^Debian/i,'debian'], [/^VirtualBox$/i,'virtualbox'], [/^pfSense$/i,'pfsense'],
+        [/^Proxmox$/i,'proxmox'], [/^Apache$/i,'apache'], [/^NGINX$/i,'nginx'],
+        [/^MariaDB$/i,'mariadb'], [/^Nextcloud$/i,'nextcloud'], [/^Kali Linux$/i,'kalilinux'],
+        [/^Cisco/i,'cisco'], [/^React$/i,'react'], [/^TypeScript$/i,'typescript'],
+        [/^Vite$/i,'vite'], [/^Tailwind CSS$/i,'tailwindcss'], [/^Netlify$/i,'netlify']
+    ];
+    function toolVisual(project) {
+        const used = new Set();
+        const logos = project.technologies.flatMap(tech => {
+            const icon = toolIcons.find(([pattern]) => pattern.test(tech))?.[1];
+            if (!icon || used.has(icon) || used.size >= 3) return [];
+            used.add(icon);
+            return [`<img src="../assets/icons/outils/${icon}.svg" alt="${escapeHTML(tech)}" width="40" height="40" loading="lazy">`];
+        });
+        return `<span class="project-tools">${logos.length ? logos.join('') : project.technologies.slice(0,2).map(t=>`<span class="tool-label">${escapeHTML(t)}</span>`).join('')}</span>`;
+    }
+    // Simplified topology, based only on supplied project descriptions.
+    // NetVision machine addresses were confirmed in the previous discussion.
+    function architecture(id) {
+        const box = (x,y,w,lines) => `<g><rect x="${x}" y="${y}" width="${w}" height="${lines.length*22+20}" rx="6"/>${lines.map((t,i)=>`<text x="${x+w/2}" y="${y+25+i*22}" text-anchor="middle">${escapeHTML(t)}</text>`).join('')}</g>`;
+        const line = d => `<path d="${d}"/>`;
+        let content='',height=330;
+        if (id==='ha-active-directory') {
+            height=350;
+            content=box(20,10,320,['VirtualBox · netvision.lan'])+line('M180 52V72H94V90M180 72H266V90')+
+                box(16,90,156,['SRV-DC1','172.31.3.49'])+box(188,90,156,['SRV-DC2','172.31.3.62'])+
+                line('M94 154V174H266V154M180 174V190')+box(20,190,320,['AD · DNS · DHCP','DFS · GPO'])+
+                line('M180 254V274')+box(20,274,320,['Client Windows 11']);
+        } else if(id==='pare-feu-pfsense') {
+            height=370;
+            content=box(20,10,320,['WAN'])+line('M180 52V72')+box(20,72,320,['pfSense'])+
+                line('M180 114V134H94V154M180 134H266V154')+
+                box(16,154,156,['LAN','Windows 11'])+box(188,154,156,['DMZ','Debian · Apache'])+
+                box(20,245,320,['VM Kali'])+`<text x="180" y="322" text-anchor="middle">Composant de test</text>`;
+        } else if(id==='kali-metasploitable') {
+            height=350;
+            content=box(20,10,320,['Kali Linux'])+line('M180 52V85')+box(20,85,320,['Nmap','Ports · Services · OS'])+line('M180 149V182')+
+                box(20,182,320,['VM cible'])+line('M180 224V257')+box(20,257,320,['CVE · searchsploit']);
+        } else if(id==='infrastructure-domaine') {
+            height=400;
+            content=box(20,10,320,['Réseau de la salle · Internet'])+line('M180 52V72')+
+                box(20,72,320,['Routeur Debian','Deux interfaces réseau'])+
+                line('M180 136V158H12V348M12 186H28M12 267H28M12 348H28')+
+                box(28,164,316,['Windows Server 2025 · AD'])+
+                box(28,245,316,['Client Windows 11'])+box(28,326,316,['Serveur Debian 13']);
+        } else {
+            const sequences = {
+                'ap-fruit':[['Réseau de la salle'],['pfSense externe'],['DMZ · Serveur web public'],['pfSense interne'],['LAN · Web interne · DNS','Windows 11']],
+                'infrastructure-domaine':[['Réseau de la salle · Internet'],['Routeur Debian','Deux interfaces réseau'],['Windows Server 2025 · AD','Client Windows 11'],['Serveur Debian 13']],
+                'pile-lemp':[['Proxmox'],['VM Debian'],['NGINX · PHP-FPM','MariaDB'],['HTTPS · OpenSSL']],
+                'lemp-demenagement':[['Proxmox'],['VM Debian'],['NGINX · PHP-FPM','MariaDB'],['HTTPS · OpenSSL']],
+                'dmz-mangue':[['pfSense'],['DMZ · Debian 13'],['Apache · SSH · vsftpd']],
+                'nas-lycee':[['OpenMediaVault'],['SSD · Système','HDD · Stockage']]
+            };
+            const rows=sequences[id];if(!rows)return '';
+            let y=10;
+            rows.forEach((labels,i)=>{content+=box(20,y,320,labels);y+=labels.length*22+20;if(i<rows.length-1){content+=line(`M180 ${y}V${y+22}`);y+=22;}});
+            height=y+16;
+        }
+        return `<figure class="architecture"><svg viewBox="0 0 360 ${height}" role="img" aria-label="Schéma simplifié du projet" xmlns="http://www.w3.org/2000/svg">${content}</svg><figcaption>Schéma simplifié à partir des éléments du projet.</figcaption></figure>`;
+    }
+    function renderFeatured() {
+        if(!featured)return;
+        featured.innerHTML=featuredIds.map(id=>{
+            const project=projets.find(p=>p.id===id);
+            return `<article class="card project-card featured-card"><h3>${escapeHTML(project.title)}</h3>${architecture(id)}<p>${escapeHTML(project.summary)}</p><button type="button" class="button small" data-project="${id}" aria-haspopup="dialog">Voir le projet<span class="sr-only"> : ${escapeHTML(project.title)}</span></button></article>`;
+        }).join('');
+    }
+
     /* ===== CARTES ET FILTRAGE ===== */
     function render(category = 'Tout') {
         const visible = projets.filter((project) => category === 'Tout' || project.categories.includes(category));
@@ -918,7 +992,7 @@ const projets = [
             if(project.group!==previousGroup){const heading=document.createElement('h2');heading.className='project-group-heading';heading.id='domaine-'+['Systèmes & services','Réseaux & cybersécurité','Web & bases de données','Robotique & maintenance'].indexOf(project.group);heading.textContent=project.group;grid.append(heading);previousGroup=project.group;}
             const card = document.createElement('article');
             card.className = 'card project-card';
-            card.innerHTML = `<span class="eyebrow">${project.categories.map(escapeHTML).join(' / ')}</span><div class="project-icon" aria-hidden="true">${project.categories.includes('Sécurité') ? '[ / ]' : project.categories.includes('Web') ? '&lt;/&gt;' : '{ : }'}</div><h3>${escapeHTML(project.title)}</h3><p>${escapeHTML(project.summary)}</p><div class="badges">${project.technologies.slice(0,4).map((tech) => `<span class="badge">${escapeHTML(tech)}</span>`).join('')}</div><button type="button" class="button small" data-project="${project.id}">Voir le projet<span class="sr-only"> : ${escapeHTML(project.title)}</span></button>`;
+            card.innerHTML = `<span class="eyebrow">${project.categories.map(escapeHTML).join(' / ')}</span><div class="project-icon" aria-hidden="true">${toolVisual(project)}</div><h3>${escapeHTML(project.title)}</h3><p>${escapeHTML(project.summary)}</p><div class="badges">${project.technologies.slice(0,4).map((tech) => `<span class="badge">${escapeHTML(tech)}</span>`).join('')}</div><button type="button" class="button small" data-project="${project.id}">Voir le projet<span class="sr-only"> : ${escapeHTML(project.title)}</span></button>`;
             if(project.media?.length){const photo=document.createElement('img');photo.className='project-cover';photo.src=project.media[0].src;photo.alt=project.media[0].alt;photo.loading='lazy';card.querySelector('.project-icon').replaceWith(photo);}
             if(project.status==='En cours d’apprentissage'){const status=document.createElement('span');status.className='badge';status.textContent=project.status;card.querySelector('h3').before(status);}
             if(project.id==='epicerie-du-monde'){const logo=document.createElement('img');logo.className='company-logo';logo.src='../assets/img/stages/epicerie-du-monde-logo.webp';logo.alt='Logo de l’Épicerie du monde';logo.width=64;logo.height=64;card.querySelector('.project-icon').replaceWith(logo);} grid.append(card);
@@ -940,7 +1014,10 @@ const projets = [
         const project = projets.find((item) => item.id === id);
         if (!project) return;
         opener = source || document.activeElement;
-        detail.innerHTML = `<h2 id="project-title">${escapeHTML(project.title)}</h2><div class="badges">${project.technologies.map((tech) => `<span class="badge">${escapeHTML(tech)}</span>`).join('')}</div><h3>Contexte</h3><p>${escapeHTML(project.context)}</p><h3>Objectif</h3><p>${escapeHTML(project.objective)}</p><h3>Étapes et composants du projet</h3><ol>${project.steps.map((step) => `<li>${escapeHTML(step)}</li>`).join('')}</ol>${project.difficulty && !project.difficulty.startsWith('[À COMPLÉTER') && !project.difficulty.startsWith('Les difficultés rencontrées restent') ? `<h3>Difficultés et solutions</h3><p>${escapeHTML(project.difficulty)}</p>` : ''}${project.contribution && !project.contribution.startsWith('[À COMPLÉTER') ? `<h3>Ma contribution et les résultats</h3><p>${escapeHTML(project.contribution)}</p>` : ''}<h3>Compétences du Bloc 1</h3><ul>${project.skills.map((id) => `<li>${names[id]}</li>`).join('')}</ul><p class="notice">Retrouvez la correspondance complète avec le Bloc 1 sur la page Compétences.</p>`;
+        const difficultyTitle = ['diagnostic-infrastructure', 'fedora', 'maintenance-pc'].includes(project.id) ? 'Problème rencontré et solution' : 'Difficultés et solutions';
+        detail.innerHTML = `<h2 id="project-title">${escapeHTML(project.title)}</h2><div class="badges">${project.technologies.map((tech) => `<span class="badge">${escapeHTML(tech)}</span>`).join('')}</div><h3>Contexte</h3><p>${escapeHTML(project.context)}</p><h3>Objectif</h3><p>${escapeHTML(project.objective)}</p><h3>Étapes et composants du projet</h3><ol>${project.steps.map((step) => `<li>${escapeHTML(step)}</li>`).join('')}</ol>${project.difficulty && !project.difficulty.startsWith('[À COMPLÉTER') && !project.difficulty.startsWith('Les difficultés rencontrées restent') ? `<h3>${escapeHTML(difficultyTitle)}</h3><p>${escapeHTML(project.difficulty)}</p>` : ''}${project.contribution && project.contribution !== project.objective && !project.contribution.startsWith('[À COMPLÉTER') ? `<h3>Ma contribution et les résultats</h3><p>${escapeHTML(project.contribution)}</p>` : ''}<h3>Compétences du Bloc 1</h3><ul>${project.skills.map((id) => `<li>${names[id]}</li>`).join('')}</ul><p class="notice">Retrouvez la correspondance complète avec le Bloc 1 sur la page Compétences.</p>`;
+        const diagram = architecture(project.id);
+        if (diagram) detail.querySelector('.badges').insertAdjacentHTML('afterend', diagram);
         if(project.video){const figure=document.createElement('figure');figure.className='project-video';figure.innerHTML=`<video controls playsinline preload="metadata" poster="${escapeHTML(project.video.poster)}" aria-label="Démonstration du robot suiveur de ligne"><source src="${escapeHTML(project.video.src)}" type="video/mp4"></video><figcaption>Démonstration du robot suiveur de ligne</figcaption>`;detail.append(figure);}
         if(project.media?.length){const gallery=document.createElement('div');gallery.className='project-media-grid';gallery.innerHTML=project.media.map(m=>`<figure><button class="gallery-trigger" type="button" data-gallery="${escapeHTML(m.src)}" aria-label="${escapeHTML(m.alt)}"><img src="${escapeHTML(m.src)}" alt="${escapeHTML(m.alt)}" loading="lazy"></button><figcaption>${escapeHTML(m.alt)}</figcaption></figure>`).join('');const heading=document.createElement('h3');heading.textContent='Photos du projet';detail.append(heading,gallery);}
         if (project.documentNote) { const note = document.createElement('p'); note.className = 'notice'; note.textContent = project.documentNote; detail.append(note); }
@@ -961,10 +1038,10 @@ const projets = [
         dialog.scrollTop = 0;
         if (!onCompetences) history.replaceState(history.state, '', '#' + project.id);
     }
-    grid?.addEventListener('click', event => {
+    [grid, featured].filter(Boolean).forEach(container => container.addEventListener('click', event => {
         const button = event.target.closest('[data-project]');
         if (button) openProject(button.dataset.project, button);
-    });
+    }));
     if (onCompetences) {
         document.addEventListener('click', event => {
             const link = event.target.closest('a[href]');
@@ -995,6 +1072,7 @@ const projets = [
     });
     if (grid) {
         render();
+        renderFeatured();
         if (location.hash) openProject(location.hash.slice(1));
         window.addEventListener('hashchange', () => { if (location.hash) openProject(location.hash.slice(1)); });
     }

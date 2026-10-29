@@ -23,7 +23,7 @@
         <div class="container"><div class="footer-top"><div><strong>Imrane Boumaza</strong><p>Construire. Comprendre. Sécuriser.</p></div><div class="footer-links"><a data-contact="linkedin">LinkedIn</a><a data-contact="github">GitHub</a><a href="mailto:${contacts.email}">Email</a><a data-contact="cv">Voir mon CV</a></div></div><div class="footer-bottom"><span>© 2026 Imrane Boumaza – Portfolio BTS SIO SISR</span><span>Pau, France · Promotion 2027</span></div></div>`;
     document.querySelectorAll('[data-contact]').forEach((link) => {
         const key = link.dataset.contact;
-        const value = contacts[key] || (key === 'cv' ? root + 'assets/docs/cv-imrane-boumaza.pdf' : '');
+        const value = contacts[key] || (key === 'cv' ? root + 'assets/docs/cv-imrane-boumaza.pdf?v=20261029-cv' : '');
         if ((key === 'linkedin' || key === 'github') && !value.trim()) { link.remove(); return; }
         if (value) {
             link.href = value;
