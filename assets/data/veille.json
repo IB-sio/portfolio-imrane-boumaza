@@ -34,22 +34,26 @@
         "fr": {
           "title": "Des installations de réfrigération compromises",
           "summary": "Le CERT-FR signale des compromissions de contrôleurs de réfrigération exposés sur Internet.",
-          "analysis": "Je retiens que les interfaces de gestion doivent être protégées, notamment par un VPN."
+          "analysis": "Je retiens que les interfaces de gestion doivent être protégées, notamment par un VPN.",
+          "device": "Contrôleurs de réfrigération"
         },
         "en": {
           "title": "Refrigeration controllers compromised",
           "summary": "CERT-FR reports compromises of refrigeration controllers exposed to the Internet.",
-          "analysis": "My takeaway: management interfaces need protection, including a VPN."
+          "analysis": "My takeaway: management interfaces need protection, including a VPN.",
+          "device": "Refrigeration controllers"
         },
         "ar": {
           "title": "اختراق وحدات تحكم بالتبريد",
           "summary": "أبلغ CERT-FR عن اختراق وحدات تحكم بالتبريد مكشوفة على الإنترنت.",
-          "analysis": "أستخلص ضرورة حماية واجهات الإدارة، خصوصًا عبر VPN."
+          "analysis": "أستخلص ضرورة حماية واجهات الإدارة، خصوصًا عبر VPN.",
+          "device": "وحدات التحكم بالتبريد"
         },
         "zh": {
           "title": "制冷控制器遭入侵",
           "summary": "CERT-FR 报告了暴露在互联网上的制冷控制器遭入侵的情况。",
-          "analysis": "我理解到，管理界面需要保护，例如通过 VPN 访问。"
+          "analysis": "我理解到，管理界面需要保护，例如通过 VPN 访问。",
+          "device": "制冷控制器"
         }
       }
     },
@@ -84,6 +88,66 @@
       }
     },
     {
+      "id": "d6f2ca57825179d2be72",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/securite-objets-connectes-iot",
+      "date": "2026-10-05",
+      "source": "Cybermalveillance.gouv.fr",
+      "category": "practice",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Objets connectés : les gestes de base",
+          "summary": "Cette fiche rappelle les mots de passe, les mises à jour et la séparation des réseaux.",
+          "analysis": "J’y trouve des conseils à appliquer chez moi."
+        },
+        "en": {
+          "title": "Connected devices: the basics",
+          "summary": "This guide covers passwords, updates and network separation.",
+          "analysis": "I find advice I can apply at home."
+        },
+        "ar": {
+          "title": "الأجهزة المتصلة: خطوات أساسية",
+          "summary": "تذكّر هذه الصفحة بكلمات المرور والتحديثات وفصل الشبكات.",
+          "analysis": "أجد فيها نصائح يمكنني تطبيقها في المنزل."
+        },
+        "zh": {
+          "title": "联网设备：基本防护措施",
+          "summary": "这份指南提醒我关注密码、更新和网络隔离。",
+          "analysis": "其中的建议可以在家中使用。"
+        }
+      }
+    },
+    {
+      "id": "c16a4411ae7a41d98652",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+      "date": "2026-09-11",
+      "source": "Commission européenne",
+      "category": "regulation",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "CRA : le signalement est lancé",
+          "summary": "La Commission précise les obligations déjà applicables.",
+          "analysis": "Je m’en sers pour distinguer cette étape de l’échéance de 2027."
+        },
+        "en": {
+          "title": "CRA: reporting is now required",
+          "summary": "The Commission explains the obligations already in force.",
+          "analysis": "I use this to separate this step from the 2027 deadline."
+        },
+        "ar": {
+          "title": "CRA: بدء الإبلاغ",
+          "summary": "توضح المفوضية الالتزامات المطبّقة حالياً.",
+          "analysis": "أستعين بها للتمييز بين هذه المرحلة وموعد 2027."
+        },
+        "zh": {
+          "title": "CRA：报告义务已启动",
+          "summary": "欧盟委员会说明了已经实施的义务。",
+          "analysis": "我用这份资料区分当前阶段与2027年的期限。"
+        }
+      }
+    },
+    {
       "id": "4200a5f0d3908f20caba",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
       "date": "2026-09-07",
@@ -114,6 +178,70 @@
       }
     },
     {
+      "id": "f3e970d5f0009ebe4c40",
+      "url": "https://www.justice.gov/opa/pr/justice-department-and-fbi-seize-platforms-operated-and-used-china-state-sponsored-hackers",
+      "date": "2026-08-26",
+      "source": "U.S. Department of Justice",
+      "category": "incident",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "QScan et QTRouter : des relais neutralisés",
+          "summary": "Des objets compromis servaient à cacher l’origine d’intrusions.",
+          "analysis": "Ce cas me rappelle que l’IoT ne sert pas seulement aux attaques DDoS.",
+          "device": "Appareils IoT compromis intégrés à un réseau de relais"
+        },
+        "en": {
+          "title": "QScan and QTRouter: proxy platforms disrupted",
+          "summary": "Compromised devices were used to hide the source of intrusions.",
+          "analysis": "This reminds me that IoT abuse is not limited to DDoS.",
+          "device": "Compromised IoT devices in a proxy network"
+        },
+        "ar": {
+          "title": "QScan وQTRouter: تعطيل منصات الوساطة",
+          "summary": "استُخدمت أجهزة مخترقة لإخفاء مصدر الاختراقات.",
+          "analysis": "يذكّرني هذا بأن إساءة استخدام IoT لا تقتصر على هجمات DDoS.",
+          "device": "أجهزة IoT مخترقة ضمن شبكة وسائط اتصال"
+        },
+        "zh": {
+          "title": "QScan 与 QTRouter：代理平台遭到干扰",
+          "summary": "受控设备被用来隐藏入侵来源。",
+          "analysis": "这让我认识到，IoT 被滥用的方式不只是 DDoS。",
+          "device": "被纳入代理网络的受控 IoT 设备"
+        }
+      }
+    },
+    {
+      "id": "60a1caf06fff93701f9d",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
+      "date": "2026-08-11",
+      "source": "Cloudflare",
+      "category": "news",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "DDoS : le bilan du premier semestre 2026",
+          "summary": "Cloudflare rapporte 935 attaques dépassant 1 Tb/s.",
+          "analysis": "Je garde une réserve : ce bilan couvre son réseau et ne porte pas uniquement sur l’IoT."
+        },
+        "en": {
+          "title": "DDoS: first-half 2026 report",
+          "summary": "Cloudflare reports 935 attacks above 1 Tbps.",
+          "analysis": "I keep the scope in mind: this covers its network and is not limited to IoT."
+        },
+        "ar": {
+          "title": "DDoS: حصيلة النصف الأول من 2026",
+          "summary": "تسجّل Cloudflare نحو 935 هجوماً تجاوز 1 تيرابت/ثانية.",
+          "analysis": "أنتبه إلى نطاق التقرير: فهو يخص شبكتها ولا يقتصر على IoT."
+        },
+        "zh": {
+          "title": "DDoS：2026年上半年报告",
+          "summary": "Cloudflare 报告了935次超过1 Tbps的攻击。",
+          "analysis": "我注意到，这仅是其网络的数据，也不只涉及 IoT。"
+        }
+      }
+    },
+    {
       "id": "67dd982229c7d3f9ea37",
       "url": "https://www.justice.gov/usao-ak/pr/authorities-disrupt-worlds-largest-iot-ddos-botnets-responsible-record-breaking-attacks",
       "date": "2026-03-19",
@@ -124,22 +252,124 @@
         "fr": {
           "title": "Quatre botnets IoT visés",
           "summary": "Une opération internationale vise les infrastructures de commande d’Aisuru, KimWolf, JackSkid et Mossad.",
-          "analysis": "Je distingue la perturbation du botnet du nettoyage des appareils infectés."
+          "analysis": "Je distingue la perturbation du botnet du nettoyage des appareils infectés.",
+          "device": "Caméras, enregistreurs vidéo et routeurs Wi-Fi"
         },
         "en": {
           "title": "Four IoT botnets targeted",
           "summary": "An international operation targets command infrastructure for Aisuru, KimWolf, JackSkid and Mossad.",
-          "analysis": "I distinguish disrupting a botnet from cleaning infected devices."
+          "analysis": "I distinguish disrupting a botnet from cleaning infected devices.",
+          "device": "Cameras, video recorders and Wi-Fi routers"
         },
         "ar": {
           "title": "استهداف أربع شبكات أجهزة مصابة",
           "summary": "استهدفت عملية دولية بنى التحكم في Aisuru وKimWolf وJackSkid وMossad.",
-          "analysis": "أميز بين تعطيل الشبكة وتنظيف الأجهزة المصابة."
+          "analysis": "أميز بين تعطيل الشبكة وتنظيف الأجهزة المصابة.",
+          "device": "كاميرات ومسجّلات فيديو وموجّهات Wi-Fi"
         },
         "zh": {
           "title": "四个物联网僵尸网络遭打击",
           "summary": "国际行动针对 Aisuru、KimWolf、JackSkid 和 Mossad 的控制基础设施。",
-          "analysis": "我区分了破坏僵尸网络与清理受感染设备这两件事。"
+          "analysis": "我区分了破坏僵尸网络与清理受感染设备这两件事。",
+          "device": "摄像头、录像机和 Wi-Fi 路由器"
+        }
+      }
+    },
+    {
+      "id": "72540ecf7ddaa61d7c9d",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2025-q4/",
+      "date": "2026-02-05",
+      "source": "Cloudflare",
+      "category": "incident",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "31,4 Tb/s : le record publié pour fin 2025",
+          "summary": "Cloudflare décrit un pic de 31,4 Tb/s, puis une campagne Aisuru-KimWolf dépassant 200 millions de requêtes par seconde.",
+          "analysis": "Des Android TV infectées y participaient. Je distingue bien débit réseau et nombre de requêtes."
+        },
+        "en": {
+          "title": "31.4 Tbps: the reported late-2025 record",
+          "summary": "Cloudflare describes a 31.4 Tbps peak, then an Aisuru-KimWolf campaign exceeding 200 million requests per second.",
+          "analysis": "Infected Android TVs took part. I distinguish network bandwidth from the number of requests."
+        },
+        "ar": {
+          "title": "31.4 تيرابت/ثانية: الرقم المنشور لأواخر 2025",
+          "summary": "تصف Cloudflare ذروة بلغت 31.4 تيرابت/ثانية، ثم حملة Aisuru-KimWolf تجاوزت 200 مليون طلب في الثانية.",
+          "analysis": "شاركت فيها أجهزة Android TV مصابة. أميّز بين معدل نقل البيانات وعدد الطلبات."
+        },
+        "zh": {
+          "title": "31.4 Tbps：2025年底公布的纪录",
+          "summary": "Cloudflare 介绍了31.4 Tbps的峰值，以及随后每秒超过2亿次请求的 Aisuru-KimWolf 攻击活动。",
+          "analysis": "受感染的 Android TV 也参与其中。我注意区分网络流量速率与请求数量。"
+        }
+      }
+    },
+    {
+      "id": "4e6d83bd73de6af75107",
+      "url": "https://www.fbi.gov/investigate/cyber/alerts/2025/home-internet-connected-devices-facilitate-criminal-activity",
+      "date": "2025-06-05",
+      "source": "FBI",
+      "category": "incident",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "BADBOX 2.0 : attention aux appareils déjà infectés",
+          "summary": "Le FBI alerte sur des appareils infectés avant l’achat ou pendant leur installation.",
+          "analysis": "Je retiens qu’un appareil neuf n’est pas forcément sûr.",
+          "device": "Boîtiers TV et autres appareils domestiques"
+        },
+        "en": {
+          "title": "BADBOX 2.0: devices may arrive infected",
+          "summary": "The FBI warns of devices infected before purchase or during setup.",
+          "analysis": "I take away that a new device is not necessarily safe.",
+          "device": "TV boxes and other home devices"
+        },
+        "ar": {
+          "title": "BADBOX 2.0: أجهزة قد تصل مصابة",
+          "summary": "يحذّر FBI من أجهزة أُصيبت قبل الشراء أو أثناء الإعداد.",
+          "analysis": "أستنتج أن الجهاز الجديد ليس آمناً بالضرورة.",
+          "device": "أجهزة استقبال التلفاز وأجهزة منزلية أخرى"
+        },
+        "zh": {
+          "title": "BADBOX 2.0：设备可能已被感染",
+          "summary": "FBI 提醒，一些设备在购买前或安装过程中就已被感染。",
+          "analysis": "我由此认识到，新设备不一定安全。",
+          "device": "电视盒子及其他家用设备"
+        }
+      }
+    },
+    {
+      "id": "9109428123af6384207d",
+      "url": "https://www.justice.gov/usao-wdpa/pr/court-authorized-operation-disrupts-worldwide-botnet-used-peoples-republic-china-state",
+      "date": "2024-09-18",
+      "source": "U.S. Department of Justice",
+      "category": "incident",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Flax Typhoon : botnet perturbé",
+          "summary": "Le FBI a perturbé ce réseau d’appareils compromis.",
+          "analysis": "",
+          "device": "Routeurs, caméras IP, enregistreurs et NAS"
+        },
+        "en": {
+          "title": "Flax Typhoon: botnet disrupted",
+          "summary": "The FBI disrupted this network of compromised devices.",
+          "analysis": "",
+          "device": "Routers, IP cameras, recorders and NAS devices"
+        },
+        "ar": {
+          "title": "Flax Typhoon: تعطيل شبكة أجهزة مخترقة",
+          "summary": "عطّل FBI هذه الشبكة من الأجهزة المخترقة.",
+          "analysis": "",
+          "device": "موجّهات وكاميرات IP ومسجّلات وأجهزة NAS"
+        },
+        "zh": {
+          "title": "Flax Typhoon：僵尸网络遭到干扰",
+          "summary": "FBI 对这一受控设备网络实施了干扰行动。",
+          "analysis": "",
+          "device": "路由器、IP 摄像头、录像机和 NAS"
         }
       }
     }
