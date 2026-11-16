@@ -1,8 +1,28 @@
 {
   "model": "gemini-2.5-flash-lite",
-  "max_ai_per_run": 6,
+  "max_ai_per_run": 10,
   "max_items": 300,
   "feeds": [
+    {
+      "name": "CERT-FR / ANSSI · Alertes",
+      "url": "https://cert.cyber.gouv.fr/alerte/feed/",
+      "domains": [
+        "cert.cyber.gouv.fr",
+        "www.cert.ssi.gouv.fr",
+        "cert.ssi.gouv.fr",
+        "www.cert.cyber.gouv.fr"
+      ]
+    },
+    {
+      "name": "CERT-FR / ANSSI · Avis",
+      "url": "https://cert.cyber.gouv.fr/avis/feed/",
+      "domains": [
+        "cert.cyber.gouv.fr",
+        "www.cert.ssi.gouv.fr",
+        "cert.ssi.gouv.fr",
+        "www.cert.cyber.gouv.fr"
+      ]
+    },
     {
       "name": "CERT-FR / ANSSI",
       "url": "https://cert.cyber.gouv.fr/feed/",
@@ -14,13 +34,27 @@
       ]
     },
     {
-      "name": "CERT-FR / ANSSI \u00b7 Alertes",
-      "url": "https://cert.cyber.gouv.fr/alerte/feed/",
+      "name": "CISA · Équipements industriels",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml",
       "domains": [
-        "cert.cyber.gouv.fr",
-        "www.cert.ssi.gouv.fr",
-        "cert.ssi.gouv.fr",
-        "www.cert.cyber.gouv.fr"
+        "www.cisa.gov",
+        "cisa.gov"
+      ]
+    },
+    {
+      "name": "CISA",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "domains": [
+        "www.cisa.gov",
+        "cisa.gov"
+      ]
+    },
+    {
+      "name": "NCSC (Royaume-Uni)",
+      "url": "https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml",
+      "domains": [
+        "www.ncsc.gov.uk",
+        "ncsc.gov.uk"
       ]
     },
     {
@@ -30,6 +64,18 @@
         "www.justice.gov",
         "justice.gov"
       ]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://blog.cloudflare.com/rss/",
+      "domains": [
+        "blog.cloudflare.com"
+      ]
     }
+  ],
+  "reference_domains": [
+    "digital-strategy.ec.europa.eu",
+    "www.cybermalveillance.gouv.fr",
+    "www.fbi.gov"
   ]
 }
