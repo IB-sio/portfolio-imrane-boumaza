@@ -1,0 +1,56 @@
+name: Actualiser la veille IoT
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+concurrency:
+  group: veille-iot
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tester
+        run: python -m unittest discover -s tests/veille
+      - name: Collecter et analyser
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/veille/collect.py
+      - name: Enregistrer les publications
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/data/veille.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualiser la veille IoT'
+            git push
+          fi
+      - name: Préparer le site public
+        run: |
+          mkdir -p _public
+          cp -a index.html pages css js assets robots.txt sitemap.xml _public/
+          if [ -f CNAME ]; then cp CNAME _public/; fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _public
+  deploy:
+    needs: update
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
