@@ -1,0 +1,35 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "max_ai_per_run": 6,
+  "max_items": 300,
+  "feeds": [
+    {
+      "name": "CERT-FR / ANSSI",
+      "url": "https://cert.cyber.gouv.fr/feed/",
+      "domains": [
+        "cert.cyber.gouv.fr",
+        "www.cert.ssi.gouv.fr",
+        "cert.ssi.gouv.fr",
+        "www.cert.cyber.gouv.fr"
+      ]
+    },
+    {
+      "name": "CERT-FR / ANSSI \u00b7 Alertes",
+      "url": "https://cert.cyber.gouv.fr/alerte/feed/",
+      "domains": [
+        "cert.cyber.gouv.fr",
+        "www.cert.ssi.gouv.fr",
+        "cert.ssi.gouv.fr",
+        "www.cert.cyber.gouv.fr"
+      ]
+    },
+    {
+      "name": "U.S. Department of Justice",
+      "url": "https://www.justice.gov/feeds/justice-news.xml?type%5Bpress_release%5D=press_release",
+      "domains": [
+        "www.justice.gov",
+        "justice.gov"
+      ]
+    }
+  ]
+}
