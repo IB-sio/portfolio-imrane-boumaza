@@ -1,0 +1,147 @@
+{
+  "last_run": "2026-11-16T09:41:23.490858+00:00",
+  "last_success": "2026-11-16T09:41:23.490858+00:00",
+  "ai_status": "not_configured",
+  "sources": [
+    {
+      "name": "CERT-FR / ANSSI",
+      "url": "https://cert.cyber.gouv.fr/feed/",
+      "ok": true,
+      "matches": 0
+    },
+    {
+      "name": "CERT-FR / ANSSI · Alertes",
+      "url": "https://cert.cyber.gouv.fr/alerte/feed/",
+      "ok": true,
+      "matches": 1
+    },
+    {
+      "name": "U.S. Department of Justice",
+      "url": "https://www.justice.gov/feeds/justice-news.xml?type%5Bpress_release%5D=press_release",
+      "ok": true,
+      "matches": 0
+    }
+  ],
+  "items": [
+    {
+      "id": "5ff5eaaacc5809441f6e",
+      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+      "date": "2026-10-12",
+      "source": "CERT-FR / ANSSI",
+      "category": "incident",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Des installations de réfrigération compromises",
+          "summary": "Le CERT-FR signale des compromissions de contrôleurs de réfrigération exposés sur Internet.",
+          "analysis": "Je retiens que les interfaces de gestion doivent être protégées, notamment par un VPN."
+        },
+        "en": {
+          "title": "Refrigeration controllers compromised",
+          "summary": "CERT-FR reports compromises of refrigeration controllers exposed to the Internet.",
+          "analysis": "My takeaway: management interfaces need protection, including a VPN."
+        },
+        "ar": {
+          "title": "اختراق وحدات تحكم بالتبريد",
+          "summary": "أبلغ CERT-FR عن اختراق وحدات تحكم بالتبريد مكشوفة على الإنترنت.",
+          "analysis": "أستخلص ضرورة حماية واجهات الإدارة، خصوصًا عبر VPN."
+        },
+        "zh": {
+          "title": "制冷控制器遭入侵",
+          "summary": "CERT-FR 报告了暴露在互联网上的制冷控制器遭入侵的情况。",
+          "analysis": "我理解到，管理界面需要保护，例如通过 VPN 访问。"
+        }
+      }
+    },
+    {
+      "id": "ce7c141bb7ce039e286b",
+      "url": "https://www.justice.gov/opa/pr/justice-department-and-fbi-seize-vulnerability-scanning-and-spear-phishing-tools-operated",
+      "date": "2026-10-08",
+      "source": "U.S. Department of Justice",
+      "category": "incident",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Microscan et FishHub : des outils saisis",
+          "summary": "La justice américaine annonce la saisie de deux outils associés à Integrity Tech, qui utilisait un botnet IoT.",
+          "analysis": "Je retiens que des objets compromis peuvent servir à préparer d’autres intrusions."
+        },
+        "en": {
+          "title": "Microscan and FishHub tools seized",
+          "summary": "The US Justice Department announces seizures of two tools linked to Integrity Tech, which used an IoT botnet.",
+          "analysis": "My takeaway: compromised devices can help prepare further intrusions."
+        },
+        "ar": {
+          "title": "مصادرة أداتي Microscan وFishHub",
+          "summary": "أعلنت وزارة العدل الأمريكية مصادرة أداتين مرتبطتين بـ Integrity Tech التي استخدمت شبكة أجهزة IoT مصابة.",
+          "analysis": "أستخلص أن الأجهزة المخترقة قد تُستخدم للتحضير لاختراقات أخرى."
+        },
+        "zh": {
+          "title": "Microscan 和 FishHub 被查封",
+          "summary": "美国司法部宣布查封与 Integrity Tech 相关的两款工具，该组织曾使用物联网僵尸网络。",
+          "analysis": "我理解到，被入侵的设备可能被用于准备其他入侵活动。"
+        }
+      }
+    },
+    {
+      "id": "4200a5f0d3908f20caba",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
+      "date": "2026-09-07",
+      "source": "Commission européenne",
+      "category": "regulation",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "CRA : les échéances à suivre",
+          "summary": "Le CRA prévoit un signalement à partir du 11 septembre 2026 et les principales obligations à partir du 11 décembre 2027.",
+          "analysis": "Je suis ces étapes pour comprendre les exigences imposées aux fabricants."
+        },
+        "en": {
+          "title": "CRA deadlines to follow",
+          "summary": "CRA reporting starts on 11 September 2026; the main obligations apply from 11 December 2027.",
+          "analysis": "I follow these milestones to understand manufacturers’ requirements."
+        },
+        "ar": {
+          "title": "مواعيد CRA للمتابعة",
+          "summary": "يبدأ الإبلاغ في 11 سبتمبر 2026 وتُطبق الالتزامات الرئيسية من 11 ديسمبر 2027.",
+          "analysis": "أتابع هذه المراحل لفهم متطلبات المصنعين."
+        },
+        "zh": {
+          "title": "CRA 的关键日期",
+          "summary": "报告义务从 2026 年 9 月 11 日起适用，主要义务从 2027 年 12 月 11 日起适用。",
+          "analysis": "我关注这些节点，以理解对制造商的要求。"
+        }
+      }
+    },
+    {
+      "id": "67dd982229c7d3f9ea37",
+      "url": "https://www.justice.gov/usao-ak/pr/authorities-disrupt-worlds-largest-iot-ddos-botnets-responsible-record-breaking-attacks",
+      "date": "2026-03-19",
+      "source": "U.S. Department of Justice",
+      "category": "incident",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Quatre botnets IoT visés",
+          "summary": "Une opération internationale vise les infrastructures de commande d’Aisuru, KimWolf, JackSkid et Mossad.",
+          "analysis": "Je distingue la perturbation du botnet du nettoyage des appareils infectés."
+        },
+        "en": {
+          "title": "Four IoT botnets targeted",
+          "summary": "An international operation targets command infrastructure for Aisuru, KimWolf, JackSkid and Mossad.",
+          "analysis": "I distinguish disrupting a botnet from cleaning infected devices."
+        },
+        "ar": {
+          "title": "استهداف أربع شبكات أجهزة مصابة",
+          "summary": "استهدفت عملية دولية بنى التحكم في Aisuru وKimWolf وJackSkid وMossad.",
+          "analysis": "أميز بين تعطيل الشبكة وتنظيف الأجهزة المصابة."
+        },
+        "zh": {
+          "title": "四个物联网僵尸网络遭打击",
+          "summary": "国际行动针对 Aisuru、KimWolf、JackSkid 和 Mossad 的控制基础设施。",
+          "analysis": "我区分了破坏僵尸网络与清理受感染设备这两件事。"
+        }
+      }
+    }
+  ]
+}
