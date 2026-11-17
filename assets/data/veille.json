@@ -1,13 +1,13 @@
 {
-  "last_run": "2026-11-16T22:23:01.618864+00:00",
-  "last_success": "2026-11-16T22:23:01.618864+00:00",
+  "last_run": "2026-11-17T08:25:58.872230+00:00",
+  "last_success": "2026-11-17T08:25:58.872230+00:00",
   "ai_status": "unavailable",
   "sources": [
     {
       "name": "CERT-FR / ANSSI · Alertes",
       "url": "https://cert.cyber.gouv.fr/alerte/feed/",
       "ok": true,
-      "matches": 6
+      "matches": 1
     },
     {
       "name": "CERT-FR / ANSSI · Avis",
@@ -19,7 +19,7 @@
       "name": "CERT-FR / ANSSI",
       "url": "https://cert.cyber.gouv.fr/feed/",
       "ok": true,
-      "matches": 1
+      "matches": 0
     },
     {
       "name": "CISA · Équipements industriels",
@@ -37,7 +37,7 @@
       "name": "NCSC (Royaume-Uni)",
       "url": "https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml",
       "ok": true,
-      "matches": 2
+      "matches": 1
     },
     {
       "name": "U.S. Department of Justice",
@@ -50,30 +50,58 @@
       "url": "https://blog.cloudflare.com/rss/",
       "ok": true,
       "matches": 1
+    },
+    {
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "ok": true,
+      "matches": 0
+    },
+    {
+      "name": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "ok": true,
+      "matches": 1
     }
   ],
   "items": [
     {
-      "id": "93dde8cc7b16e73253cc",
-      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-      "date": "2026-10-29",
-      "source": "Cloudflare",
+      "id": "a989c64e51ebb71dbd1d",
+      "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+      "date": "2026-11-16",
+      "source": "The Hacker News",
       "category": "incident",
-      "kind": "feed",
-      "original_title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-      "excerpt": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
-      "translations": {}
-    },
-    {
-      "id": "c3772d3c559d58d781ca",
-      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-013/",
-      "date": "2026-10-14",
-      "source": "CERT-FR / ANSSI · Alertes",
-      "category": "vulnerability",
-      "kind": "feed",
-      "original_title": "[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure (ICS) (14 octobre 2026)",
-      "excerpt": "[Mise à jour du 2 novembre 2026] Le 29 octobre 2026, Ivanti a mis à jour son avis de sécurité du 13 octobre 2026 pour ajouter deux vulnérabilités (CVE-2026-111357 et CVE-2026-118527). Celles-ci permettent à un attaquant authentifié d'élever ses privilèges et de téléverser un fichier arbitraire...",
-      "translations": {}
+      "kind": "ai",
+      "original_title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+      "excerpt": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybersecurity agencies in Belgium, Irel",
+      "translations": {
+        "fr": {
+          "title": "Six failles non corrigées dans des contrôleurs de réfrigération Danfoss",
+          "summary": "Des chercheurs ont découvert six vulnérabilités dans les contrôleurs Danfoss AK-SM800A. Elles permettent une prise de contrôle à distance sans authentification. Aucun correctif n'est disponible pour l'instant, même sur la dernière version du micrologiciel.",
+          "analysis": "Je retiens qu'un équipement industriel non patché expose un réseau à des risques graves. Il faut vérifier l'exposition de ces contrôleurs sur Internet.",
+          "device": "contrôleurs de réfrigération"
+        },
+        "en": {
+          "title": "Six Unpatched Danfoss Refrigeration Controller Flaws",
+          "summary": "Researchers found six flaws in Danfoss AK-SM800A refrigeration controllers. These issues allow remote attackers to take over devices without logging in. No patches are currently available, and the newest firmware does not fix them.",
+          "analysis": "I note that unpatched industrial devices pose severe risks. We must check if these controllers are directly exposed to the internet.",
+          "device": "refrigeration controllers"
+        },
+        "ar": {
+          "title": "ست ثغرات غير مصححة في وحدات تحكم التبريد من Danfoss",
+          "summary": "اكتشف باحثون ست ثغرات في وحدات تحكم التبريد Danfoss AK-SM800A. تتيح هذه الثغرات للمهاجمين السيطرة عن بعد دون تسجيل دخول. لا توجد تصحيحات متاحة حالياً.",
+          "analysis": "ألاحظ أن الأجهزة الصناعية غير المصححة تشكل خطراً كبيراً. يجب التحقق من عدم تعرض هذه وحدات للإنترنت مباشرة.",
+          "device": "وحدات تحكم التبريد"
+        },
+        "zh": {
+          "title": "Danfoss 冷冻控制器发现六个未修复漏洞",
+          "summary": "研究人员在 Danfoss AK-SM800A 冷冻控制器中发现了六个漏洞。这些漏洞允许攻击者在无需登录的情况下远程控制设备。目前尚无可用补丁。",
+          "analysis": "我注意到未修补的工业设备存在严重风险。必须检查这些控制器是否直接暴露在互联网上。",
+          "device": "冷冻控制器"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-17T08:25:58.872230+00:00"
     },
     {
       "id": "5ff5eaaacc5809441f6e",
@@ -168,28 +196,6 @@
           "analysis": "其中的建议可以在家中使用。"
         }
       }
-    },
-    {
-      "id": "7b1e1e501b33f733192f",
-      "url": "https://www.ncsc.gov.uk/news/exploitation-of-vulnerabilities-affecting-citrix-netscaler-adc-and-citrix-netscaler-gateway",
-      "date": "2026-09-28",
-      "source": "NCSC (Royaume-Uni)",
-      "category": "vulnerability",
-      "kind": "feed",
-      "original_title": "Exploitation of vulnerabilities affecting Citrix NetScaler ADC and Citrix NetScaler Gateway",
-      "excerpt": "The NCSC is urging UK organisations to promptly mitigate vulnerabilities affecting Citrix NetScaler ADC and Gateway, two of which are being actively exploited.",
-      "translations": {}
-    },
-    {
-      "id": "2f60db2f482e5d604ee5",
-      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-011/",
-      "date": "2026-09-28",
-      "source": "CERT-FR / ANSSI · Alertes",
-      "category": "vulnerability",
-      "kind": "feed",
-      "original_title": "Multiples vulnérabilités dans Citrix NetScaler ADC et Gateway (28 septembre 2026)",
-      "excerpt": "**[Mise à jour du 05 octobre 2026]** Le 4 octobre 2026, Citrix a publié un avis concernant une nouvelle vulnérabilité (CVE-2026-88779) permettant un déni de service à distance. La CISA indique que cette vulnérabilité est activement exploitée. **[Mise à jour du 30 septembre 2026]** Dans un billet...",
-      "translations": {}
     },
     {
       "id": "c16a4411ae7a41d98652",
@@ -391,28 +397,6 @@
       }
     },
     {
-      "id": "38d07a426713e1d190d0",
-      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-012/",
-      "date": "2025-08-26",
-      "source": "CERT-FR / ANSSI · Alertes",
-      "category": "vulnerability",
-      "kind": "feed",
-      "original_title": "Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (26 août 2025)",
-      "excerpt": "Le 26 août 2025, Citrix a publié un bulletin de sécurité (cf. section Documentation) concernant, entre autres, la vulnérabilité CVE-2025-7775. Celle-ci permet une exécution de code arbitraire à distance et affecte toutes les versions de Citrix NetScaler ADC et NetScaler Gateway, dans certaines...",
-      "translations": {}
-    },
-    {
-      "id": "f366ce334fe2950f5f4a",
-      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-009/",
-      "date": "2025-07-01",
-      "source": "CERT-FR / ANSSI · Alertes",
-      "category": "vulnerability",
-      "kind": "feed",
-      "original_title": "Multiples vulnérabilités dans Citrix NetScaler ADC et NetScaler Gateway (01 juillet 2025)",
-      "excerpt": "**[Mise à jour du 17 juillet 2025]** L'éditeur a publié un lien contenant une méthode d'évaluation permettant d'identifier des tentatives d'exploitation dans les journaux applicatifs et systèmes [12]. **[Mise à jour du 7 juillet 2025]** Le 17 juin 2025, Citrix a publié un bulletin de sécurité...",
-      "translations": {}
-    },
-    {
       "id": "4e6d83bd73de6af75107",
       "url": "https://www.fbi.gov/investigate/cyber/alerts/2025/home-internet-connected-devices-facilitate-criminal-activity",
       "date": "2025-06-05",
@@ -445,17 +429,6 @@
           "device": "电视盒子及其他家用设备"
         }
       }
-    },
-    {
-      "id": "faaaebd40d573ca3cfad",
-      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-001/",
-      "date": "2025-01-09",
-      "source": "CERT-FR / ANSSI · Alertes",
-      "category": "vulnerability",
-      "kind": "feed",
-      "original_title": "[MàJ] Vulnérabilité dans les produits Ivanti (09 janvier 2025)",
-      "excerpt": "Une vulnérabilité jour-zéro de type débordement de pile a été découverte dans Ivanti Connect Secure (ICS), Policy Secure (IPS), Neurons for Zero Trust Access (ZTA) gateways. Cette vulnérabilité, d'identifiant CVE-2025-0282, permet à un attaquant non authentifié de provoquer une exécution de code...",
-      "translations": {}
     },
     {
       "id": "9109428123af6384207d",
