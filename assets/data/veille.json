@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-11-17T08:41:11.905152+00:00",
-  "last_success": "2026-11-17T08:41:11.905152+00:00",
+  "last_run": "2026-11-17T16:14:22.050305+00:00",
+  "last_success": "2026-11-17T16:14:22.050305+00:00",
   "ai_status": "unavailable",
   "sources": [
     {
@@ -136,6 +136,17 @@
         }
       },
       "id": "342a8b06766c7e7dd7bf"
+    },
+    {
+      "id": "93dde8cc7b16e73253cc",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
+      "date": "2026-10-29",
+      "source": "Cloudflare",
+      "category": "incident",
+      "kind": "feed",
+      "original_title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+      "excerpt": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
+      "translations": {}
     },
     {
       "url": "https://www.bitdefender.com/fr-fr/news/rapport-securite-de-l-iot-99,97-pour-cent-des-vulnerabilites-observees-sur-les-objets-connectes-sont-deja-connues-selon-bitdefender-et-netgear",
