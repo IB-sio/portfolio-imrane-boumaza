@@ -112,7 +112,7 @@
             main.append(note);
         }
         const foot = el('p', undefined, 'watch-foot');
-        foot.append(link(t('Lire la source officielle ↗'), lead.url, 'button primary'), el('small', origin(lead), 'watch-origin'));
+        foot.append(link(t('Lire la source officielle ↗'), lead.url, 'button primary'));
         main.append(foot);
 
         const side = el('aside', undefined, 'card watch-latest');
@@ -147,7 +147,7 @@
             card.append(meta(item), el('h3', v.title), el('p', v.summary));
             if (v.analysis) card.append(el('p', v.analysis, 'watch-retain'));
             const foot = el('p', undefined, 'watch-foot');
-            foot.append(link(t('Lire la source officielle ↗'), item.url), el('small', origin(item), 'watch-origin'));
+            foot.append(link(t('Lire la source officielle ↗'), item.url));
             card.append(foot); grid.append(card);
         });
         if (!items.length) grid.append(el('p', t('Aucune publication ne correspond à la recherche.')));

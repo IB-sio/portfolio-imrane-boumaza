@@ -97,6 +97,12 @@
   "reference_domains": [
     "digital-strategy.ec.europa.eu",
     "www.cybermalveillance.gouv.fr",
-    "www.fbi.gov"
+    "www.fbi.gov",
+    "vpncentral.com",
+    "www.futura-sciences.com",
+    "cipherwatch.pages.dev",
+    "www.itpro.com",
+    "www.bitdefender.com",
+    "www.journaldugeek.com"
   ]
 }

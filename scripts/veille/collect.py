@@ -103,6 +103,9 @@ def synthesize(article,cfg,key):
 def main():
     cfg=json.loads((ROOT/'scripts/veille/config.json').read_text());data=json.loads(OUT.read_text());now=datetime.now(timezone.utc).isoformat()
     byid={a['id']:a for a in data['items']};health=[];successful=0
+    extra=ROOT/'assets/data/veille-ajouts.json'
+    if extra.exists():
+        for a in json.loads(extra.read_text())['items']:byid.setdefault(a['id'],a)
     for feed in cfg['feeds']:
         try:
             parsed=parse(get(feed['url']),feed);successful+=1

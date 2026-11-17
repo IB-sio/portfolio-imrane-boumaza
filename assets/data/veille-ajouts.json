@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "url": "https://vpncentral.com/?p=246215",
+      "date": "2026-03-05",
+      "source": "CISA (via VPNCentral)",
+      "category": "vulnerability",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Caméras Hikvision : une faille de 2017 toujours exploitée",
+          "summary": "La CISA ajoute à son catalogue des failles exploitées une vulnérabilité d’authentification des caméras IP Hikvision, corrigée depuis 2017, ainsi qu’une faille Rockwell Automation.",
+          "analysis": "Une caméra jamais mise à jour reste attaquable des années après le correctif.",
+          "device": "Caméras IP Hikvision, automates Rockwell"
+        },
+        "en": {
+          "title": "Hikvision cameras: a 2017 flaw still exploited",
+          "summary": "CISA adds a Hikvision IP camera authentication flaw, fixed since 2017, and a Rockwell Automation flaw to its catalogue of exploited vulnerabilities.",
+          "analysis": "A camera that is never updated stays exposed years after the fix.",
+          "device": "Hikvision IP cameras, Rockwell controllers"
+        },
+        "ar": {
+          "title": "كاميرات Hikvision: ثغرة من 2017 ما زالت مستغلة",
+          "summary": "أضافت CISA إلى قائمة الثغرات المستغلة ثغرة مصادقة في كاميرات Hikvision مصححة منذ 2017، وثغرة لدى Rockwell Automation.",
+          "analysis": "الكاميرا التي لا تُحدَّث تبقى معرضة للهجوم بعد سنوات من التصحيح.",
+          "device": "كاميرات Hikvision، وحدات تحكم Rockwell"
+        },
+        "zh": {
+          "title": "海康威视摄像头：2017 年的漏洞仍被利用",
+          "summary": "CISA 将一个自 2017 年已修复的海康威视网络摄像头认证漏洞及一个 Rockwell Automation 漏洞列入已被利用漏洞目录。",
+          "analysis": "从不更新的摄像头在补丁发布多年后仍可被攻击。",
+          "device": "海康威视网络摄像头、Rockwell 控制器"
+        }
+      },
+      "id": "d5f077b7b9c1824b3277"
+    },
+    {
+      "url": "https://www.futura-sciences.com/tech/questions-reponses/cybersecurite-sont-objets-connectes-plus-pirates-nos-foyers-2026-24642/",
+      "date": "2026-03-10",
+      "source": "Futura",
+      "category": "practice",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Les objets connectés les plus piratés dans les foyers",
+          "summary": "L’article passe en revue les objets visés à la maison : routeurs, caméras, enceintes, box TV ou aspirateurs robots, avec des conseils de protection.",
+          "analysis": "Le routeur est le point central du foyer : c’est lui qu’il faut sécuriser en premier."
+        },
+        "en": {
+          "title": "The most hacked connected objects at home",
+          "summary": "The article reviews targeted home devices such as routers, cameras, speakers, TV boxes and robot vacuums, with protection tips.",
+          "analysis": "The router is the centre of the home network: it should be secured first."
+        },
+        "ar": {
+          "title": "الأجهزة المتصلة الأكثر اختراقًا في المنازل",
+          "summary": "يستعرض المقال الأجهزة المستهدفة في المنزل مثل أجهزة التوجيه والكاميرات ومكبرات الصوت وأجهزة التلفاز والمكانس الآلية، مع نصائح للحماية.",
+          "analysis": "جهاز التوجيه هو مركز الشبكة المنزلية، لذا يجب تأمينه أولًا."
+        },
+        "zh": {
+          "title": "家中最常被入侵的联网设备",
+          "summary": "文章梳理了家中常被攻击的设备，如路由器、摄像头、音箱、电视盒和扫地机器人，并给出防护建议。",
+          "analysis": "路由器是家庭网络的中心，应首先加固。"
+        }
+      },
+      "id": "8d0bc2f4a21031fcb777"
+    },
+    {
+      "url": "https://cipherwatch.pages.dev/articles/2026-04-29-dlink-dir823x-cve-2025-29635-mirai-cisa-kev",
+      "date": "2026-04-29",
+      "source": "CipherWatch",
+      "category": "vulnerability",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Routeurs D-Link DIR-823X exploités par un botnet Mirai",
+          "summary": "La CISA ajoute la faille CVE-2025-29635 des routeurs D-Link DIR-823X à son catalogue, alors qu’une campagne Mirai l’exploite activement.",
+          "analysis": "Un routeur en fin de vie ne recevra plus de correctif : il faut le remplacer.",
+          "device": "Routeurs D-Link DIR-823X"
+        },
+        "en": {
+          "title": "D-Link DIR-823X routers exploited by a Mirai botnet",
+          "summary": "CISA adds CVE-2025-29635, affecting D-Link DIR-823X routers, to its catalogue while a Mirai campaign actively exploits it.",
+          "analysis": "An end-of-life router will not be patched: it has to be replaced.",
+          "device": "D-Link DIR-823X routers"
+        },
+        "ar": {
+          "title": "استغلال أجهزة توجيه D-Link DIR-823X من قِبل شبكة Mirai",
+          "summary": "أضافت CISA الثغرة CVE-2025-29635 في أجهزة توجيه D-Link DIR-823X إلى قائمتها، بينما تستغلها حملة Mirai بنشاط.",
+          "analysis": "جهاز التوجيه المنتهي الدعم لن يحصل على تصحيح، ويجب استبداله.",
+          "device": "أجهزة توجيه D-Link DIR-823X"
+        },
+        "zh": {
+          "title": "D-Link DIR-823X 路由器遭 Mirai 僵尸网络利用",
+          "summary": "CISA 将影响 D-Link DIR-823X 路由器的 CVE-2025-29635 列入目录，同时一场 Mirai 攻击活动正在积极利用该漏洞。",
+          "analysis": "停止支持的路由器不会再有补丁，必须更换。",
+          "device": "D-Link DIR-823X 路由器"
+        }
+      },
+      "id": "1291ff0c58ed269fa258"
+    },
+    {
+      "url": "https://www.itpro.com/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do",
+      "date": "2026-05-07",
+      "source": "ITPro",
+      "category": "news",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "2026 : les grandes attaques IoT du premier semestre",
+          "summary": "ITPro fait le point sur les botnets de l’année : Kimwolf sur des box Android TV, KadNap sur des routeurs Asus, et le démantèlement de quatre botnets IoT.",
+          "analysis": "Mots de passe uniques, mises à jour et authentification restent les protections de base."
+        },
+        "en": {
+          "title": "2026: the major IoT attacks of the first half",
+          "summary": "ITPro reviews the year’s botnets: Kimwolf on Android TV boxes, KadNap on Asus routers, and the takedown of four IoT botnets.",
+          "analysis": "Unique passwords, updates and authentication remain the basic protections."
+        },
+        "ar": {
+          "title": "2026: أبرز هجمات إنترنت الأشياء في النصف الأول",
+          "summary": "يستعرض ITPro شبكات البوت لهذا العام: Kimwolf على أجهزة Android TV، وKadNap على أجهزة توجيه Asus، وتفكيك أربع شبكات بوت.",
+          "analysis": "تبقى كلمات المرور الفريدة والتحديثات والمصادقة الحماية الأساسية."
+        },
+        "zh": {
+          "title": "2026 年上半年主要物联网攻击",
+          "summary": "ITPro 回顾了今年的僵尸网络：针对 Android TV 盒子的 Kimwolf、针对华硕路由器的 KadNap，以及四个物联网僵尸网络被摧毁。",
+          "analysis": "唯一密码、更新和身份验证仍是基本防护措施。"
+        }
+      },
+      "id": "41a904a83d865f6b1b0c"
+    },
+    {
+      "url": "https://www.bitdefender.com/fr-fr/news/rapport-securite-de-l-iot-99,97-pour-cent-des-vulnerabilites-observees-sur-les-objets-connectes-sont-deja-connues-selon-bitdefender-et-netgear",
+      "date": "2026-10-28",
+      "source": "Bitdefender / NETGEAR",
+      "category": "news",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Rapport 2026 sur la sécurité des foyers connectés",
+          "summary": "Bitdefender et NETGEAR analysent les menaces observées de janvier à septembre 2026 sur environ 10,4 millions de foyers connectés.",
+          "analysis": "Presque toutes les failles observées étaient déjà connues : les mises à jour font la différence."
+        },
+        "en": {
+          "title": "2026 report on connected home security",
+          "summary": "Bitdefender and NETGEAR analyse threats observed from January to September 2026 across about 10.4 million connected homes.",
+          "analysis": "Almost all observed flaws were already known: updates make the difference."
+        },
+        "ar": {
+          "title": "تقرير 2026 حول أمن المنازل المتصلة",
+          "summary": "تحلل Bitdefender وNETGEAR التهديدات المرصودة من يناير إلى سبتمبر 2026 في نحو 10.4 مليون منزل متصل.",
+          "analysis": "كانت معظم الثغرات المرصودة معروفة مسبقًا، والتحديثات تصنع الفرق."
+        },
+        "zh": {
+          "title": "2026 年联网家庭安全报告",
+          "summary": "Bitdefender 与 NETGEAR 分析了 2026 年 1 月至 9 月在约 1040 万个联网家庭中观察到的威胁。",
+          "analysis": "几乎所有观察到的漏洞都是已知的：更新至关重要。"
+        }
+      },
+      "id": "015cdf81dabb563e1ca0"
+    },
+    {
+      "url": "https://www.journaldugeek.com/2026/10/30/failles-php-les-sites-sont-repares-mais-le-probleme-nest-pas-resolu-alerte-lanssi/",
+      "date": "2026-10-30",
+      "source": "ANSSI (via Journal du Geek)",
+      "category": "vulnerability",
+      "kind": "editorial",
+      "translations": {
+        "fr": {
+          "title": "Failles PHP : l’ANSSI alerte sur les routeurs, NAS et caméras",
+          "summary": "Après les failles PHP d’octobre, l’ANSSI prévient que le risque touche aussi les équipements qui embarquent PHP sans que leurs propriétaires le sachent.",
+          "analysis": "Un objet connecté contient des logiciels invisibles qu’il faut aussi mettre à jour.",
+          "device": "Routeurs, NAS, caméras de surveillance"
+        },
+        "en": {
+          "title": "PHP flaws: ANSSI warns about routers, NAS and cameras",
+          "summary": "After October’s PHP flaws, ANSSI warns that the risk also affects devices that embed PHP without their owners knowing.",
+          "analysis": "A connected device contains hidden software that also needs updates.",
+          "device": "Routers, NAS, surveillance cameras"
+        },
+        "ar": {
+          "title": "ثغرات PHP: تحذير ANSSI بشأن أجهزة التوجيه وNAS والكاميرات",
+          "summary": "بعد ثغرات PHP في أكتوبر، تحذر ANSSI من أن الخطر يطال أيضًا أجهزة تتضمن PHP دون علم مالكيها.",
+          "analysis": "يحتوي الجهاز المتصل على برمجيات خفية تحتاج أيضًا إلى تحديث.",
+          "device": "أجهزة التوجيه، NAS، كاميرات المراقبة"
+        },
+        "zh": {
+          "title": "PHP 漏洞：ANSSI 就路由器、NAS 和摄像头发出警告",
+          "summary": "在 10 月的 PHP 漏洞之后，ANSSI 警告称，风险也波及在所有者不知情的情况下内置 PHP 的设备。",
+          "analysis": "联网设备中含有看不见的软件，同样需要更新。",
+          "device": "路由器、NAS、监控摄像头"
+        }
+      },
+      "id": "342a8b06766c7e7dd7bf"
+    }
+  ]
+}
