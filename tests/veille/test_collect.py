@@ -9,10 +9,19 @@ class WatchTests(unittest.TestCase):
   self.assertEqual(c.classify('Vulnérabilité Synology'),'vulnerability')
   self.assertIsNone(c.classify('Cybercrime financial fraud'))
  def test_scope(self):
+  self.assertIsNone(c.classify('[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure (ICS)'))
+  self.assertIsNone(c.classify('Vulnérabilité dans Fortinet FortiOS (gateway VPN)'))
+  self.assertIsNone(c.classify('Mise à jour de firmware UEFI pour PC portables'))
+  self.assertEqual(c.classify('Botnet exploiting TP-Link routers and IP cameras'),'incident')
+  self.assertEqual(c.classify('Multiples vulnérabilités dans les produits Synology'),'vulnerability')
   self.assertEqual(c.classify('Multiples vulnérabilités dans les caméras Hikvision'),'vulnerability')
   self.assertEqual(c.classify('Smart TV boxes used in DDoS botnet'),'incident')
   self.assertIsNone(c.classify('Vulnérabilité dans Microsoft Office'))
   self.assertIsNone(c.dateparse('Mon, 16 Nov 0007 00:00:00 GMT'))
+ def test_ai_off_topic(self):
+  raw=json.dumps({'candidates':[{'content':{'parts':[{'text':json.dumps({'relevant':False})}]}}]}).encode()
+  with patch.object(c,'get',return_value=raw):
+   self.assertIsNone(c.synthesize({'original_title':'VPN','excerpt':'Example'},{'model':'test'},'test'))
  def test_device(self):
   obj={l:dict(title='Title',summary='Summary',analysis='Check source',device='IP cameras') for l in c.LANGS}
   raw=json.dumps({'candidates':[{'content':{'parts':[{'text':json.dumps(obj)}]}}]}).encode()

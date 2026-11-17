@@ -90,12 +90,6 @@
             const p = el('p', t('Dernière collecte réussie') + ' : ', 'eyebrow');
             p.append(time(data.last_success.slice(0, 10)));
             m.append(p);
-            if (Date.now() - new Date(data.last_success) > 48 * 3600000) {
-                m.append(el('p', t('Collecte à vérifier : les données ont plus de 48 heures.'), 'watch-health'));
-            }
-        }
-        if (data.ai_status === 'unavailable') {
-            m.append(el('p', t('Analyse indisponible au dernier passage ; nouvel essai lors de la prochaine collecte.'), 'watch-health'));
         }
     }
 

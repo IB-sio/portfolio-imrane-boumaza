@@ -11,7 +11,8 @@
         "www.cert.ssi.gouv.fr",
         "cert.ssi.gouv.fr",
         "www.cert.cyber.gouv.fr"
-      ]
+      ],
+      "publisher": "CERT-FR / ANSSI"
     },
     {
       "name": "CERT-FR / ANSSI · Avis",
@@ -21,7 +22,8 @@
         "www.cert.ssi.gouv.fr",
         "cert.ssi.gouv.fr",
         "www.cert.cyber.gouv.fr"
-      ]
+      ],
+      "publisher": "CERT-FR / ANSSI"
     },
     {
       "name": "CERT-FR / ANSSI",
@@ -31,7 +33,8 @@
         "www.cert.ssi.gouv.fr",
         "cert.ssi.gouv.fr",
         "www.cert.cyber.gouv.fr"
-      ]
+      ],
+      "publisher": "CERT-FR / ANSSI"
     },
     {
       "name": "CISA · Équipements industriels",
@@ -39,7 +42,8 @@
       "domains": [
         "www.cisa.gov",
         "cisa.gov"
-      ]
+      ],
+      "publisher": "CISA"
     },
     {
       "name": "CISA",
@@ -47,7 +51,8 @@
       "domains": [
         "www.cisa.gov",
         "cisa.gov"
-      ]
+      ],
+      "publisher": "CISA"
     },
     {
       "name": "NCSC (Royaume-Uni)",
@@ -70,6 +75,22 @@
       "url": "https://blog.cloudflare.com/rss/",
       "domains": [
         "blog.cloudflare.com"
+      ]
+    },
+    {
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "domains": [
+        "www.bleepingcomputer.com",
+        "bleepingcomputer.com"
+      ]
+    },
+    {
+      "name": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "domains": [
+        "thehackernews.com",
+        "www.thehackernews.com"
       ]
     }
   ],
