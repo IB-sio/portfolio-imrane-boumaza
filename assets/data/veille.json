@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-11-18T15:49:43.860124+00:00",
-  "last_success": "2026-11-18T15:49:43.860124+00:00",
+  "last_run": "2026-11-19T15:53:31.507690+00:00",
+  "last_success": "2026-11-19T15:53:31.507690+00:00",
   "ai_status": "unavailable",
   "sources": [
     {
@@ -24,14 +24,14 @@
     {
       "name": "CISA · Équipements industriels",
       "url": "https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml",
-      "ok": false,
-      "matches": 0
+      "ok": true,
+      "matches": 7
     },
     {
       "name": "CISA",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-      "ok": false,
-      "matches": 0
+      "ok": true,
+      "matches": 7
     },
     {
       "name": "NCSC (Royaume-Uni)",
@@ -61,10 +61,65 @@
       "name": "The Hacker News",
       "url": "https://feeds.feedburner.com/TheHackersNews",
       "ok": true,
-      "matches": 1
+      "matches": 2
     }
   ],
   "items": [
+    {
+      "id": "dd71654a2f478334a00f",
+      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "date": "2026-11-19",
+      "source": "The Hacker News",
+      "category": "vulnerability",
+      "kind": "feed",
+      "original_title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "excerpt": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vul",
+      "translations": {}
+    },
+    {
+      "id": "2bf6e3b53184cd104c37",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-18",
+      "source": "CISA",
+      "category": "vulnerability",
+      "kind": "feed",
+      "original_title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "excerpt": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability CVE-2026-90436 Apache Axis Unsafe ",
+      "translations": {}
+    },
+    {
+      "id": "639fac0f8727e01aec6e",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
+      "date": "2026-11-17",
+      "source": "CISA",
+      "category": "vulnerability",
+      "kind": "feed",
+      "original_title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+      "excerpt": "View CSAF Summary .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the la",
+      "translations": {}
+    },
+    {
+      "id": "5b5cf4f017dbab0ebb96",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
+      "date": "2026-11-17",
+      "source": "CISA",
+      "category": "vulnerability",
+      "kind": "feed",
+      "original_title": "Siemens SIMATIC",
+      "excerpt": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet av",
+      "translations": {}
+    },
+    {
+      "id": "1e3a8a0a7e3cd062f91c",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
+      "date": "2026-11-17",
+      "source": "CISA",
+      "category": "vulnerability",
+      "kind": "feed",
+      "original_title": "Siemens SIMATIC WinCC",
+      "excerpt": "View CSAF Summary Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The foll",
+      "translations": {}
+    },
     {
       "id": "a989c64e51ebb71dbd1d",
       "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
@@ -102,6 +157,17 @@
       },
       "model": "gemini-flash-lite-latest",
       "analyzed_at": "2026-11-17T08:25:58.872230+00:00"
+    },
+    {
+      "id": "cddef5bb18e3bcbf0141",
+      "url": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
+      "date": "2026-11-05",
+      "source": "CISA",
+      "category": "vulnerability",
+      "kind": "feed",
+      "original_title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
+      "excerpt": "Overview The Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation (FBI), Health and Human Services (HHS), U.S. Department of Agriculture (USDA), and the Department of Transportation (DoT)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting industrial refrigeratio",
+      "translations": {}
     },
     {
       "url": "https://www.journaldugeek.com/2026/10/30/failles-php-les-sites-sont-repares-mais-le-probleme-nest-pas-resolu-alerte-lanssi/",
@@ -177,6 +243,17 @@
         }
       },
       "id": "015cdf81dabb563e1ca0"
+    },
+    {
+      "id": "844f494ee2626f9c8461",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
+      "date": "2026-10-22",
+      "source": "CISA",
+      "category": "vulnerability",
+      "kind": "feed",
+      "original_title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
+      "excerpt": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the firmware version V3.1.7 for the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP (incl. SIPLUS variant). Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of S",
+      "translations": {}
     },
     {
       "id": "5ff5eaaacc5809441f6e",
