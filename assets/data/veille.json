@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-11-21T14:47:17.259634+00:00",
-  "last_success": "2026-11-21T14:47:17.259634+00:00",
+  "last_run": "2026-11-22T14:43:42.998642+00:00",
+  "last_success": "2026-11-22T14:43:42.998642+00:00",
   "ai_status": "unavailable",
   "sources": [
     {
@@ -55,7 +55,7 @@
       "name": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/feed/",
       "ok": true,
-      "matches": 0
+      "matches": 1
     },
     {
       "name": "The Hacker News",
@@ -65,6 +65,17 @@
     }
   ],
   "items": [
+    {
+      "id": "9c3f2473640f00b5e047",
+      "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "date": "2026-11-21",
+      "source": "BleepingComputer",
+      "category": "incident",
+      "kind": "feed",
+      "original_title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+      "excerpt": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
+      "translations": {}
+    },
     {
       "id": "2bf6e3b53184cd104c37",
       "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
@@ -147,10 +158,37 @@
       "date": "2026-11-17",
       "source": "CISA",
       "category": "vulnerability",
-      "kind": "feed",
+      "kind": "ai",
       "original_title": "Siemens SIMATIC",
       "excerpt": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet av",
-      "translations": {}
+      "translations": {
+        "fr": {
+          "title": "Siemens SIMATIC : vulnérabilité d'authentification",
+          "summary": "Des produits Siemens SIMATIC présentent une vulnérabilité de contournement d'authentification. Un attaquant sur le trajet peut détourner une session et exécuter du code arbitraire. L'éditeur prépare des correctifs et propose des mesures.",
+          "analysis": "Je retiens qu'un attaquant peut pirater une session active sur ces automates. Il faut vérifier l'application des correctifs de Siemens sur les réseaux industriels.",
+          "device": "SIMATIC"
+        },
+        "en": {
+          "title": "Siemens SIMATIC: Authentication bypass flaw",
+          "summary": "Siemens SIMATIC products contain an authentication bypass vulnerability. An on-path attacker could hijack a session and execute arbitrary code. Siemens is preparing fixes and recommends mitigations.",
+          "analysis": "I note that an attacker can hijack sessions on these industrial devices. We must check for vendor patches and apply recommended network mitigations.",
+          "device": "SIMATIC"
+        },
+        "ar": {
+          "title": "Siemens SIMATIC: ثغرة تجاوز المصادقة",
+          "summary": "تحتوي منتجات Siemens SIMATIC على ثغرة تجاوز مصادقة. يمكن لمهاجم على المسار اختطاف الجلسة وتنفيذ تعليمات برمجية. تستعد الشركة لإصدار إصلاحات وتوصي بتخفيف الآثار.",
+          "analysis": "ألاحظ أن المهاجم يمكنه اختطاف جلسات على هذه الأجهزة الصناعية. يجب التحقق من تطبيق إصلاحات الشركة على الشبكات.",
+          "device": "SIMATIC"
+        },
+        "zh": {
+          "title": "西门子 SIMATIC 存在身份验证绕过漏洞",
+          "summary": "西门子 SIMATIC 产品包含身份验证绕过漏洞。路径上的攻击者可能劫持会话并执行任意代码。西门子正在准备修复程序并建议采取缓解措施。",
+          "analysis": "我注意到攻击者可以劫持这些工业设备的会话。必须检查供应商补丁的应用情况并采取缓解措施。",
+          "device": "SIMATIC"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-22T14:43:42.998642+00:00"
     },
     {
       "id": "1e3a8a0a7e3cd062f91c",
@@ -207,10 +245,37 @@
       "date": "2026-11-05",
       "source": "CISA",
       "category": "vulnerability",
-      "kind": "feed",
+      "kind": "ai",
       "original_title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
       "excerpt": "Overview The Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation (FBI), Health and Human Services (HHS), U.S. Department of Agriculture (USDA), and the Department of Transportation (DoT)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting industrial refrigeratio",
-      "translations": {}
+      "translations": {
+        "fr": {
+          "title": "Des agences américaines alertent sur la sécurité du froid industriel",
+          "summary": "Plusieurs agences américaines signalent des activités cyber malveillantes qui ciblent les systèmes de réfrigération industrielle et de surveillance de la chaîne du froid.",
+          "analysis": "Je retiens qu'il faut durcir la sécurité de ces équipements industriels pour éviter des pannes. C'est un point à vérifier pour les réseaux connectés.",
+          "device": "Industrial refrigeration systems"
+        },
+        "en": {
+          "title": "US Agencies Urge Hardening of Industrial Refrigeration Systems",
+          "summary": "US government organizations warn about malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems.",
+          "analysis": "I note that hardening these industrial systems is vital to prevent disruptions. This is a key point to check for connected operational networks.",
+          "device": "Industrial refrigeration systems"
+        },
+        "ar": {
+          "title": "وكالات أمريكية تحث على تأمين أنظمة التبريد الصناعي",
+          "summary": "حذرت وكالات حكومية أمريكية من نشاط سيبراني خبيث يستهدف أنظمة التبريد الصناعي ومراقبة سلسلة التبريد.",
+          "analysis": "أستنتج ضرورة تشديد الحماية على هذه المعدات لتجنب المخاطر. هذا أمر يجب التحقق منه في شبكات التشغيل المتصلة.",
+          "device": "Industrial refrigeration systems"
+        },
+        "zh": {
+          "title": "美国政府机构敦促加固工业制冷系统",
+          "summary": "美国多个政府机构发出警告，称有恶意网络活动正在针对工业制冷和冷链监控系统。",
+          "analysis": "我注意到必须加固这些工业设备以防止中断。这是检查联网运营网络时需要注意的一点。",
+          "device": "Industrial refrigeration systems"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-22T14:43:42.998642+00:00"
     },
     {
       "url": "https://www.journaldugeek.com/2026/10/30/failles-php-les-sites-sont-repares-mais-le-probleme-nest-pas-resolu-alerte-lanssi/",
