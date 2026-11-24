@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-11-23T18:28:33.320332+00:00",
-  "last_success": "2026-11-23T18:28:33.320332+00:00",
+  "last_run": "2026-11-24T17:56:42.464362+00:00",
+  "last_success": "2026-11-24T17:56:42.464362+00:00",
   "ai_status": "unavailable",
   "sources": [
     {
@@ -25,19 +25,19 @@
       "name": "CISA · Équipements industriels",
       "url": "https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml",
       "ok": true,
-      "matches": 7
+      "matches": 4
     },
     {
       "name": "CISA",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
       "ok": true,
-      "matches": 7
+      "matches": 5
     },
     {
       "name": "NCSC (Royaume-Uni)",
       "url": "https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml",
       "ok": true,
-      "matches": 1
+      "matches": 0
     },
     {
       "name": "U.S. Department of Justice",
@@ -55,7 +55,7 @@
       "name": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/feed/",
       "ok": true,
-      "matches": 2
+      "matches": 1
     },
     {
       "name": "The Hacker News",
@@ -77,15 +77,53 @@
       "translations": {}
     },
     {
+      "id": "7b86d265d0e5ec071e3b",
+      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+      "date": "2026-11-23",
+      "source": "BleepingComputer",
+      "category": "news",
+      "kind": "feed",
+      "original_title": "OpenRouter drops AI providers over leaked prompts and secrets",
+      "excerpt": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+      "translations": {}
+    },
+    {
       "id": "16ed0873d9d0d20b2812",
       "url": "https://cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1607/",
       "date": "2026-11-23",
       "source": "CERT-FR / ANSSI",
       "category": "vulnerability",
-      "kind": "feed",
+      "kind": "ai",
       "original_title": "Multiples vulnérabilités dans les produits Synology (23 novembre 2026)",
       "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-      "translations": {}
+      "translations": {
+        "fr": {
+          "title": "Multiples vulnérabilités dans les produits Synology",
+          "summary": "Plusieurs failles de sécurité touchent les produits Synology. Elles permettent à des attaquants d'exécuter du code à distance, de provoquer un déni de service et d'accéder à des données confidentielles.",
+          "analysis": "Je retiens qu'il faut vérifier les correctifs pour les appareils NAS. Ces failles menacent les données stockées.",
+          "device": "NAS Synology"
+        },
+        "en": {
+          "title": "Multiple vulnerabilities in Synology products",
+          "summary": "Multiple security flaws affect Synology products. They allow remote attackers to run arbitrary code, cause denial of service, and compromise data privacy.",
+          "analysis": "I note that updates should be checked for NAS devices. These flaws threaten stored data security.",
+          "device": "Synology NAS"
+        },
+        "ar": {
+          "title": "ثغرات متعددة في منتجات Synology",
+          "summary": "تم اكتشاف ثغرات أمنية متعددة في منتجات Synology. تسمح للمهاجمين بتنفيذ تعليمات برمجية عن بُعد، والتسبب في رفض الخدمة، وانتهاك سرية البيانات.",
+          "analysis": "أستنتج ضرورة التحقق من التحديثات لأجهزة التخزين الشبكي. هذه الثغرات تهدد أمان البيانات المخزنة.",
+          "device": "Synology NAS"
+        },
+        "zh": {
+          "title": "Synology产品存在多个漏洞",
+          "summary": "Synology产品被发现存在多个安全漏洞。这些漏洞允许攻击者远程执行代码、导致远程拒绝服务并侵犯数据机密性。",
+          "analysis": "我注意到需要检查网络存储设备的更新。这些漏洞威胁着存储数据的安全。",
+          "device": "Synology NAS"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-24T17:56:42.464362+00:00"
     },
     {
       "id": "f7511684402b8adf536b",
