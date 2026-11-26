@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-11-25T17:25:26.325981+00:00",
-  "last_success": "2026-11-25T17:25:26.325981+00:00",
+  "last_run": "2026-11-26T17:05:08.936411+00:00",
+  "last_success": "2026-11-26T17:05:08.936411+00:00",
   "ai_status": "unavailable",
   "sources": [
     {
@@ -31,7 +31,7 @@
       "name": "CISA",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
       "ok": true,
-      "matches": 5
+      "matches": 6
     },
     {
       "name": "NCSC (Royaume-Uni)",
@@ -82,10 +82,37 @@
       "date": "2026-11-23",
       "source": "The Hacker News",
       "category": "vulnerability",
-      "kind": "feed",
+      "kind": "ai",
       "original_title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
       "excerpt": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices c",
-      "translations": {}
+      "translations": {
+        "fr": {
+          "title": "Des pirates exploitent une faille Cloud GL.iNet sur des routeurs et KVM",
+          "summary": "Des attaquants ont exploité une vulnérabilité dans le service de gestion à distance GoodCloud de GL.iNet. Ils ont installé des logiciels malveissants sur certains routeurs et appareils KVM de clients. L'entreprise a corrigé la faille et bloqué l'accès.",
+          "analysis": "Je retiens qu'un service cloud de gestion à distance peut devenir un point d'entrée pour des attaquants. Il faut vérifier la sécurité des accès cloud sur nos équipements réseau.",
+          "device": "routeurs et appareils KVM"
+        },
+        "en": {
+          "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers",
+          "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service. They installed malware on some customer routers and KVM devices. The manufacturer identified and fixed the flaw and blocked the attacker's access.",
+          "analysis": "I note that cloud-based remote management services can be targeted to compromise network hardware. We must verify how cloud access is secured on connected devices.",
+          "device": "routers and KVM devices"
+        },
+        "ar": {
+          "title": "قراصنة يستغلون ثغرة في سحابة GL.iNet لتثبيت برمجيات خبيثة",
+          "summary": "استغل قراصنة ثغرة أمنية في خدمة الإدارة عن بعد GoodCloud الخاصة بشركة GL.iNet. قاموا بتثبيت برمجيات خبيثة على بعض أجهزة التوجيه وأجهزة KVM للعملاء. قامت الشركة بإصلاح الثغرة ومنع الوصول.",
+          "analysis": "ألاحظ أن خدمات الإدارة السحابية قد تكون نقطة ضعف للأجهزة المتصلة. يجب التحقق من أمان الاتصالات السحابية على أجهزة الشبكة.",
+          "device": "أجهزة التوجيه وأجهزة KVM"
+        },
+        "zh": {
+          "title": "黑客利用GL.iNet云漏洞在路由器上安装恶意软件",
+          "summary": "黑客利用GL.iNet的GoodCloud远程管理服务中的漏洞，在一些客户的路由器和KVM设备上安装了恶意软件。该制造商已修复该漏洞并阻止了攻击者的访问。",
+          "analysis": "我注意到云端远程管理服务可能成为网络硬件的攻击入口。我们需要检查联网设备的云访问安全性。",
+          "device": "路由器和KVM设备"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-26T17:05:08.936411+00:00"
     },
     {
       "id": "16ed0873d9d0d20b2812",
@@ -145,17 +172,6 @@
       "kind": "feed",
       "original_title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
       "excerpt": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
-      "translations": {}
-    },
-    {
-      "id": "dd71654a2f478334a00f",
-      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
-      "date": "2026-11-19",
-      "source": "The Hacker News",
-      "category": "vulnerability",
-      "kind": "feed",
-      "original_title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-      "excerpt": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vul",
       "translations": {}
     },
     {
@@ -278,10 +294,37 @@
       "date": "2026-11-17",
       "source": "CISA",
       "category": "vulnerability",
-      "kind": "feed",
+      "kind": "ai",
       "original_title": "Siemens SIMATIC WinCC",
       "excerpt": "View CSAF Summary Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The foll",
-      "translations": {}
+      "translations": {
+        "fr": {
+          "title": "Siemens SIMATIC WinCC : Vulnérabilité d'exécution de code",
+          "summary": "Siemens SIMATIC WinCC avant la version 8.2 présente une vulnérabilité d'exécution de code lors de l'ouverture de fichiers. Siemens prépare des correctifs et propose des mesures d'atténuation.",
+          "analysis": "Je retiens qu'un fichier malveillant peut compromettre un automate ou un poste de contrôle. Il faut vérifier les correctifs de l'éditeur.",
+          "device": "industrial controllers"
+        },
+        "en": {
+          "title": "Siemens SIMATIC WinCC Code Execution Flaw",
+          "summary": "Siemens SIMATIC WinCC before V8.2 has an implicit active content execution vulnerability when opening files. This can allow arbitrary code execution. Siemens is preparing fixes and workarounds.",
+          "analysis": "I note that opening untrusted files can allow attackers to run code on industrial devices. Checking for vendor patches is essential.",
+          "device": "industrial controllers"
+        },
+        "ar": {
+          "title": "ثغرة تنفيذ تعبئة البرمجيات في Siemens SIMATIC WinCC",
+          "summary": "يحتوي Siemens SIMATIC WinCC قبل الإصدار 8.2 على ثغرة تنفيذ محتوى نشط عند فتح الملفات، مما قد يسمح بتنفيذ تعليمات برمجية. تستعد الشركة لإصدار التحديثات.",
+          "analysis": "ألاحظ أن فتح ملفات غير موثوقة قد يخاطر بأنظمة التحكم الصناعية. يجب التحقق من توفر التحديثات الأمنية.",
+          "device": "industrial controllers"
+        },
+        "zh": {
+          "title": "西门子 SIMATIC WinCC 存在代码执行漏洞",
+          "summary": "西门子 SIMATIC WinCC V8.2 之前版本在打开文件时包含隐式活动内容执行漏洞，攻击者可借此在设备上执行任意代码。西门子正在准备修复程序。",
+          "analysis": "我注意到打开不受信任的文件可能会在工业设备上执行代码。应当检查并应用厂商提供的补丁。",
+          "device": "industrial controllers"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-26T17:05:08.936411+00:00"
     },
     {
       "id": "a989c64e51ebb71dbd1d",
@@ -392,17 +435,6 @@
         }
       },
       "id": "342a8b06766c7e7dd7bf"
-    },
-    {
-      "id": "93dde8cc7b16e73253cc",
-      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-      "date": "2026-10-29",
-      "source": "Cloudflare",
-      "category": "incident",
-      "kind": "feed",
-      "original_title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-      "excerpt": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
-      "translations": {}
     },
     {
       "url": "https://www.bitdefender.com/fr-fr/news/rapport-securite-de-l-iot-99,97-pour-cent-des-vulnerabilites-observees-sur-les-objets-connectes-sont-deja-connues-selon-bitdefender-et-netgear",
