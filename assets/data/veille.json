@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-11-26T17:05:08.936411+00:00",
-  "last_success": "2026-11-26T17:05:08.936411+00:00",
+  "last_run": "2026-11-27T16:49:41.816583+00:00",
+  "last_success": "2026-11-27T16:49:41.816583+00:00",
   "ai_status": "unavailable",
   "sources": [
     {
@@ -13,13 +13,13 @@
       "name": "CERT-FR / ANSSI · Avis",
       "url": "https://cert.cyber.gouv.fr/avis/feed/",
       "ok": true,
-      "matches": 1
+      "matches": 2
     },
     {
       "name": "CERT-FR / ANSSI",
       "url": "https://cert.cyber.gouv.fr/feed/",
       "ok": true,
-      "matches": 1
+      "matches": 2
     },
     {
       "name": "CISA · Équipements industriels",
@@ -55,7 +55,7 @@
       "name": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/feed/",
       "ok": true,
-      "matches": 1
+      "matches": 0
     },
     {
       "name": "The Hacker News",
@@ -65,6 +65,44 @@
     }
   ],
   "items": [
+    {
+      "id": "370116bf3b2404b56b7f",
+      "url": "https://cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1630/",
+      "date": "2026-11-27",
+      "source": "CERT-FR / ANSSI",
+      "category": "vulnerability",
+      "kind": "ai",
+      "original_title": "Multiples vulnérabilités dans Synology DSM et DSM Enterprise (27 novembre 2026)",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Synology DSM et DSM Enterprise. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance.",
+      "translations": {
+        "fr": {
+          "title": "Vulnérabilités dans Synology DSM et DSM Enterprise",
+          "summary": "Plusieurs failles de sécurité ont été détectées dans Synology DSM et DSM Enterprise. Elles risquent de permettre à des pirates informatiques de réaliser une exécution de code à distance.",
+          "analysis": "Je retiens qu'il faut surveiller les mises à jour pour ces boîtiers NAS afin d'éviter le piratage.",
+          "device": "NAS"
+        },
+        "en": {
+          "title": "Vulnerabilities in Synology DSM and DSM Enterprise",
+          "summary": "Multiple security flaws were found in Synology DSM and DSM Enterprise. These weaknesses could allow an attacker to trigger remote arbitrary code execution.",
+          "analysis": "I note that administrators should apply updates quickly to protect these network storage devices from remote attacks.",
+          "device": "NAS"
+        },
+        "ar": {
+          "title": "ثغرات أمنية في Synology DSM و DSM Enterprise",
+          "summary": "تم اكتشاف ثغرات أمنية متعددة في أنظمة Synology DSM و DSM Enterprise. قد تتيح هذه الثغرات للمهاجمين تنفيذ تعليمات برمجية عن بعد.",
+          "analysis": "أستنتج أنه يجب متابعة التحديثات الأمنية لتخزين الشبكة لحمايتها من المخاطر.",
+          "device": "NAS"
+        },
+        "zh": {
+          "title": "Synology DSM 和 DSM Enterprise 存在多个漏洞",
+          "summary": "Synology DSM 和 DSM Enterprise 中发现了多个安全漏洞。攻击者利用这些漏洞可能导致远程任意代码执行。",
+          "analysis": "我注意到需要及时更新网络附加存储设备，以防范远程攻击风险。",
+          "device": "NAS"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-27T16:49:41.816583+00:00"
+    },
     {
       "id": "820a6be24763a5428c47",
       "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
@@ -472,10 +510,37 @@
       "date": "2026-10-22",
       "source": "CISA",
       "category": "vulnerability",
-      "kind": "feed",
+      "kind": "ai",
       "original_title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
       "excerpt": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the firmware version V3.1.7 for the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP (incl. SIPLUS variant). Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of S",
-      "translations": {}
+      "translations": {
+        "fr": {
+          "title": "Siemens SIMATIC S7-1500 : vulnérabilités dans le sous-système Linux",
+          "summary": "Plusieurs failles ont été découvertes dans le sous-système GNU/Linux du firmware V3.1.7 de l'automate Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP. Siemens prépare des correctifs et propose des mesures d'atténuation.",
+          "analysis": "Je retiens qu'il faut surveiller les mises à jour pour cet automate industriel et appliquer les mitigations de l'éditeur en attendant.",
+          "device": "Automates industriels"
+        },
+        "en": {
+          "title": "Siemens SIMATIC S7-1500: Vulnerabilities in Linux Subsystem",
+          "summary": "Multiple vulnerabilities are found in the GNU/Linux subsystem of firmware version V3.1.7 for the Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP. Siemens is working on patches and suggests specific mitigations.",
+          "analysis": "I note that industrial controllers need careful firmware updates and temporary mitigations when patches are delayed.",
+          "device": "Industrial controllers"
+        },
+        "ar": {
+          "title": "Siemens SIMATIC S7-1500: ثغرات في نظام Linux الفرعي",
+          "summary": "تم اكتشاف ثغرات متعددة في نظام GNU/Linux الفرعي للإصدار الثابت V3.1.7 لجهاز Siemens SIMATIC S7-1500. تعمل الشركة على تجهيز الإصلاحات وتوصي بتدابير مؤقتة.",
+          "analysis": "ألاحظ أهمية متابعة التحديثات لهذه وحدات التحكم الصناعية وتطبيق الحلول المؤقتة في انتظار الترتيبات.",
+          "device": "وحدات التحكم الصناعية"
+        },
+        "zh": {
+          "title": "西门子 SIMATIC S7-1500：Linux 子系统存在漏洞",
+          "summary": "西门子 SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP 的 V3.1.7 固件之 GNU/Linux 子系统中发现多处漏洞。西门子正在准备修复程序并推荐缓解措施。",
+          "analysis": "我注意到工业控制器需要密切关注固件更新，并在等待补丁时应用缓解措施。",
+          "device": "工业控制器"
+        }
+      },
+      "model": "gemini-flash-lite-latest",
+      "analyzed_at": "2026-11-27T16:49:41.816583+00:00"
     },
     {
       "id": "5ff5eaaacc5809441f6e",
